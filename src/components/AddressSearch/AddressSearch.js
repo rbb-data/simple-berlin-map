@@ -8,23 +8,25 @@ import searchIcon from './img/searchIcon.svg'
 import closeIcon from './img/closeIcon.svg'
 
 function featureLabel (feature) {
-  const p = feature.properties
+  const p = feature.components
 
-  if (p.layer === 'street') {
-    return `${p.street}, ${p.borough}, ${p.neighbourhood}`
-  }
+  return `${feature.formatted}`
 
-  if (p.layer === 'address') {
-    if (p.neighbourhood != null && p.neighbourhood !== '') {
-      return `${p.name}, ${p.neighbourhood}, ${p.locality}`
-    }
+  // if (p._type === 'road') {
+  //return `${p.road}, ${p.postcode} ${p.state}, ${p.city_district}`
+  // }
 
-    if (p.borough != null && p.borough !== '') {
-      return `${p.name}, ${p.borough}, ${p.locality}`
-    }
-  }
+  // if (p.layer === 'address') {
+  //   if (p.neighbourhood != null && p.neighbourhood !== '') {
+  //     return `${p.name}, ${p.neighbourhood}, ${p.locality}`
+  //   }
+  //
+  //   if (p.borough != null && p.borough !== '') {
+  //     return `${p.name}, ${p.borough}, ${p.locality}`
+  //   }
+  // }
 
-  return p.label.replace('Germany', 'Deutschland')
+  // return p.label.replace('Germany', 'Deutschland')
 }
 
 export default class AddressSearch extends Component {
@@ -37,20 +39,20 @@ export default class AddressSearch extends Component {
   callbacks = {
     // called when result changes
     // if we have a GeoJSON Point that is selected as current location is provided
-    // otherwise the result is is null
+    // otherwise the result is is undefined
     onSelect ({ timetamp, location: { lat, lng } }) {}
   }
 
   constructor ({ onSelect, isOnSmallScreen }) {
     super()
-    if (onSelect !== null) this.callbacks.onSelect = onSelect
+    if (onSelect !== undefined) this.callbacks.onSelect = onSelect
     this.state = {
       // value of the text input
       value: '',
       // selected input feature
-      result: null,
+      result: undefined,
       // displayed suggestions (e.g. autocomplete results)
-      suggestions: null,
+      suggestions: undefined,
       // currently selected
       highlightedSuggestion: 0,
       // the input field is hidden on mobile
@@ -59,10 +61,9 @@ export default class AddressSearch extends Component {
   }
 
   handleAutoCompleteResponse = (result) => {
-    const {layers} = this.props
+    console.log(result)
     const features = result.features
-      .filter(({properties: {layer}}) => layers.indexOf(layer) !== -1)
-      .filter(({properties: {street, borough, neighbourhood}}) => street != null && borough != null && neighbourhood != null)
+      .filter(({components: {_type}}) => _type === 'road' || _type === 'neighbourhood' || _type === 'building')
       .map((feature) => {
         return {
           // keep type and geometry
@@ -81,7 +82,7 @@ export default class AddressSearch extends Component {
   }
 
   scheduledRequest = null
-  debounceInMs = 250
+  debounceInMs = 1000
 
   /**
    * Handler for changes in our <input type='text' />, responsible for sending
@@ -95,7 +96,7 @@ export default class AddressSearch extends Component {
     e.preventDefault()
     const { target: {value} } = e
     if (this.state.value === value) return
-    this.setState({ value, suggestions: null, result: null })
+    this.setState({ value, suggestions: undefined, result: undefined })
     this.callbacks.onSelect()
 
     // cancel scheduled request and schedule a new one if our text field isn't empty
@@ -103,7 +104,9 @@ export default class AddressSearch extends Component {
 
     if (value.trim() !== '') {
       const params = { layers: layers.join(','), text: value }
-      const request = () => autocomplete(params).then(result => this.handleAutoCompleteResponse(result))
+      const request = () => autocomplete(params).then(result => {
+        this.handleAutoCompleteResponse(result)
+      })
       this.scheduledRequest = setTimeout(request, this.debounceInMs)
     }
   }
@@ -117,15 +120,15 @@ export default class AddressSearch extends Component {
     this.setState({
       value: feature.properties.label,
       result: feature,
-      suggestions: null,
+      suggestions: undefined,
       highlightedSuggestion: 0
     }, () => {
       this.blockBlurEvent = false
       this.callbacks.onSelect({
         timetamp: Date.now(),
         location: {
-          lat: feature.geometry.coordinates[1],
-          lng: feature.geometry.coordinates[0]
+          lat: feature.geometry.lat,
+          lng: feature.geometry.lng
         }
       })
     })
@@ -141,7 +144,7 @@ export default class AddressSearch extends Component {
     const { suggestions, highlightedSuggestion } = this.state
 
     // if we don't have any suggestions we don't need to change behavior
-    if (suggestions === null) return
+    if (suggestions === undefined) return
 
     // if we don't use any keys for navigating we don't need to change behavior
     if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return
@@ -175,7 +178,7 @@ export default class AddressSearch extends Component {
         if (this.state.result != null) return
         this.setState({
           value: '',
-          suggestions: null,
+          suggestions: undefined,
           inputVisible: !this.props.isOnSmallScreen
         })
       }, 1000)
@@ -183,7 +186,7 @@ export default class AddressSearch extends Component {
   }
 
   handleReset = () => {
-    this.setState({ value: '', result: null })
+    this.setState({ value: '', result: undefined })
     this.callbacks.onSelect()
   }
 
@@ -193,7 +196,7 @@ export default class AddressSearch extends Component {
     if (this.state.inputVisible) {
       const {result, suggestions, highlightedSuggestion} = this.state
 
-      // if the user submits twice suggestions will be null but the result
+      // if the user submits twice suggestions will be undefined but the result
       // from the last submit is stored so we can use it
       const feature = result || (suggestions && suggestions[highlightedSuggestion])
       if (feature) this.setResult(feature)

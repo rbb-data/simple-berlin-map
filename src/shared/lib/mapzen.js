@@ -1,5 +1,5 @@
 /* eslint-env browser */
-const MAPZEN_API_KEY = 'mapzen-VJzbvp1'
+const API_KEY = '3bfe7ee5a4db4abeb9719164e395d29a'
 
 /**
  * @param  {Object} params An object of parameter-value pairs
@@ -110,25 +110,23 @@ function fixBerlinSearchResult (feature) {
  */
 export function autocomplete ({ text, layers = 'street', sources = 'osm' }) {
   const params = {
-    layers,
-    sources,
-    text: text.indexOf('Berlin') === -1 ? text + ', Berlin' : text,
-    api_key: MAPZEN_API_KEY,
-    'focus.point.lat': 52.5161593,
-    'focus.point.lon': 13.3827185,
-    'boundary.rect.min_lon': 13.0840301514,
-    'boundary.rect.min_lat': 52.3351292878,
-    'boundary.rect.max_lon': 13.7775421143,
-    'boundary.rect.max_lat': 52.6784636529
+    key: API_KEY,
+    q: text.indexOf('Berlin') === -1 ? text + ', Berlin' : text,
+    bounds: '13.0840301514,52.3351292878,13.7775421143,52.6784636529',
+    countrycode: 'de',
+    language: 'de',
+    min_confidence: 5,
+    no_annotations: 1,
+    pretty: 1
   }
 
-  const uri = `//search.mapzen.com/v1/autocomplete?${toUriString(params)}`
+  const uri = `//api.opencagedata.com/geocode/v1/json?${toUriString(params)}`
 
   return fetch(uri)
     .then(throwIfError)
     .then(body => ({
       type: 'FeatureCollection',
-      features: body.features.map(fixBerlinSearchResult)
+      features: body.results
     }))
 }
 
@@ -139,7 +137,7 @@ export function autocomplete ({ text, layers = 'street', sources = 'osm' }) {
  * @param  {GeoJSON.Feature[]} otherFeatures
  * @param  {String} costing
  * @return {Promise}
- */
+
 export function fetchTimeDistanceMatrix ({ feature, otherFeatures, costing = 'auto' }) {
   // convert from geojson to the format expected by mapzen:
   const locations = [{lat: feature.geometry.coordinates[1], lon: feature.geometry.coordinates[0]}]
@@ -160,7 +158,7 @@ export function fetchTimeDistanceMatrix ({ feature, otherFeatures, costing = 'au
  * @param  {GeoJSON.Feature} feature    GeoJSON feature with point geometry
  * @param  {String} [costing='auto' }]  Costing model to use
  * @return {Promise}
- */
+
 export function fetchIsochrones ({ feature, costing = 'auto', contours = [{time: 15}, {time: 30}, {time: 45}, {time: 60}] }) {
   const params = {
     costing,
@@ -177,3 +175,4 @@ export function fetchIsochrones ({ feature, costing = 'auto', contours = [{time:
   return fetch(uri)
     .then(throwIfError)
 }
+*/
