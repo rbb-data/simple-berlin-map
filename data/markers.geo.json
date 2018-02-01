@@ -1,0 +1,3283 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          13.348689,
+          52.543009
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.543009,
+        "limitdiff": "unter",
+        "lng": 13.348689,
+        "no2_mean": 29,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Amrumer/Limburger Straße",
+        "station_id": 10,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.34854,
+          52.48602
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.48602,
+        "limitdiff": "deutlich unter",
+        "lng": 13.34854,
+        "no2_mean": 25,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Belziger Straße 52",
+        "station_id": 18,
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3688,
+          52.39617
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "im Wald oder am Stadtrand",
+        "lat": 52.39617,
+        "limitdiff": "deutlich unter",
+        "lng": 13.3688,
+        "no2_mean": 14,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Schichauweg 60",
+        "station_id": 27,
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.224899,
+          52.473037
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "im Wald oder am Stadtrand",
+        "lat": 52.473037,
+        "limitdiff": "deutlich unter",
+        "lng": 13.224899,
+        "no2_mean": 12,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Jagen 91",
+        "station_id": 32,
+        "station_ort": "Grunewald"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4309,
+          52.48925
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.48925,
+        "limitdiff": "unter",
+        "lng": 13.4309,
+        "no2_mean": 28,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Nansenstraße 10",
+        "station_id": 42,
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.49044,
+          52.63853
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "im Wald oder am Stadtrand",
+        "lat": 52.63853,
+        "limitdiff": "deutlich unter",
+        "lng": 13.49044,
+        "no2_mean": 18,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Wiltbergstraße 50",
+        "station_id": 77,
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.6444,
+          52.4482799
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "im Wald oder am Stadtrand",
+        "lat": 52.4482799,
+        "limitdiff": "deutlich unter",
+        "lng": 13.6444,
+        "no2_mean": 15,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Müggelseedamm 307-310",
+        "station_id": 85,
+        "station_ort": "Treptow-Köpenick"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.33365,
+          52.5075
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5075,
+        "limitdiff": "über",
+        "lng": 13.33365,
+        "no2_mean": 41,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Hardenbergplatz",
+        "station_id": 115,
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.31824,
+          52.46355
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.46355,
+        "limitdiff": "unter",
+        "lng": 13.31824,
+        "no2_mean": 39,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Schildhornstraße 76",
+        "station_id": 117,
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38753,
+          52.43801
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.43801,
+        "limitdiff": "über",
+        "lng": 13.38753,
+        "no2_mean": 43,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Mariendorfer Damm 148",
+        "station_id": 124,
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.44175,
+          52.46746
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.46746,
+        "limitdiff": "über",
+        "lng": 13.44175,
+        "no2_mean": 46,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Silbersteinstraße 1",
+        "station_id": 143,
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.29987,
+          52.65376
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "im Wald oder am Stadtrand",
+        "lat": 52.65376,
+        "limitdiff": "deutlich unter",
+        "lng": 13.29987,
+        "no2_mean": 14,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Jägerstieg 1",
+        "station_id": 145,
+        "station_ort": "Reinickendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.41795,
+          52.51354
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.51354,
+        "limitdiff": "unter",
+        "lng": 13.41795,
+        "no2_mean": 27,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Brückenstraße 6",
+        "station_id": 171,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.47013,
+          52.51395
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51395,
+        "limitdiff": "genau auf",
+        "lng": 13.47013,
+        "no2_mean": 40,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Frankfurter Allee 86 b",
+        "station_id": 174,
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.43435,
+          52.48181
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.48181,
+        "limitdiff": "über",
+        "lng": 13.43435,
+        "no2_mean": 49,
+        "quartile": "oberen",
+        "quelle": "Land Berlin",
+        "station_address": "Karl-Marx-Straße 77",
+        "station_id": 220,
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.53037,
+          52.48464
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.48464,
+        "limitdiff": "deutlich unter",
+        "lng": 13.53037,
+        "no2_mean": 23,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Rheingoldstraße 36",
+        "station_id": 282,
+        "station_ort": "Lichtenberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4442,
+          52.46326
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.46326,
+        "limitdiff": "deutlich über",
+        "lng": 13.4442,
+        "no2_mean": 57,
+        "quartile": "oberen",
+        "quelle": "Land Berlin",
+        "station_address": "Buschkrugallee 8",
+        "station_id": 559,
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.39127,
+          52.51024
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51024,
+        "limitdiff": "über",
+        "lng": 13.39127,
+        "no2_mean": 52,
+        "quartile": "oberen",
+        "quelle": "Land Berlin",
+        "station_address": "Leipziger Straße 32",
+        "station_id": 525,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.42462,
+          52.48715
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.48715,
+        "limitdiff": "über",
+        "lng": 13.42462,
+        "no2_mean": 52,
+        "quartile": "oberen",
+        "quelle": "Land Berlin",
+        "station_address": "Hermannplatz",
+        "station_id": 555,
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.19661,
+          52.53121
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.53121,
+        "limitdiff": "über",
+        "lng": 13.19661,
+        "no2_mean": 50,
+        "quartile": "oberen",
+        "quelle": "Land Berlin",
+        "station_address": "Klosterstraße 12",
+        "station_id": 576,
+        "station_ort": "Spandau"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.34726,
+          52.48122
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.48122,
+        "limitdiff": "über",
+        "lng": 13.34726,
+        "no2_mean": 50,
+        "quartile": "oberen",
+        "quelle": "Land Berlin",
+        "station_address": "Hauptstraße 54",
+        "station_id": 530,
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38895,
+          52.51428
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51428,
+        "limitdiff": "über",
+        "lng": 13.38895,
+        "no2_mean": 50,
+        "quartile": "oberen",
+        "quelle": "Land Berlin",
+        "station_address": "Friedrichstraße 172",
+        "station_id": 562,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.434583,
+          52.484111
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.484111,
+        "limitdiff": "über",
+        "lng": 13.434583,
+        "no2_mean": 49,
+        "quartile": "oberen",
+        "quelle": "Land Berlin",
+        "station_address": "Sonnenallee 68",
+        "station_id": 545,
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.50661,
+          52.51032
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51032,
+        "limitdiff": "über",
+        "lng": 13.50661,
+        "no2_mean": 48,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Alt-Friedrichsfelde 7a",
+        "station_id": 514,
+        "station_ort": "Lichtenberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.36395,
+          52.5014899
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5014899,
+        "limitdiff": "über",
+        "lng": 13.36395,
+        "no2_mean": 48,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Potsdamer Straße 102",
+        "station_id": 505,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.385,
+          52.55016
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.55016,
+        "limitdiff": "über",
+        "lng": 13.385,
+        "no2_mean": 47,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Badstraße 67",
+        "station_id": 573,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.36799,
+          52.52543
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.52543,
+        "limitdiff": "über",
+        "lng": 13.36799,
+        "no2_mean": 46,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Alt-Moabit 63",
+        "station_id": 537,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.28178,
+          52.51829
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51829,
+        "limitdiff": "über",
+        "lng": 13.28178,
+        "no2_mean": 46,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Spandauer Damm 103",
+        "station_id": 531,
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.43212,
+          52.46566
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.46566,
+        "limitdiff": "über",
+        "lng": 13.43212,
+        "no2_mean": 45,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Hermannstraße 120",
+        "station_id": 533,
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38537,
+          52.46521
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.46521,
+        "limitdiff": "über",
+        "lng": 13.38537,
+        "no2_mean": 45,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Tempelhofer Damm 148",
+        "station_id": 542,
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.51207,
+          52.45519
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.45519,
+        "limitdiff": "über",
+        "lng": 13.51207,
+        "no2_mean": 43,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Michael-Brückner-Straße 5",
+        "station_id": 507,
+        "station_ort": "Treptow-Köpenick"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.32231,
+          52.45885
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.45885,
+        "limitdiff": "über",
+        "lng": 13.32231,
+        "no2_mean": 43,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Schloßstraße 29",
+        "station_id": 539,
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.46066,
+          52.5502899
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5502899,
+        "limitdiff": "über",
+        "lng": 13.46066,
+        "no2_mean": 43,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Berliner Allee 118",
+        "station_id": 501,
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.46503,
+          52.49834
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.49834,
+        "limitdiff": "über",
+        "lng": 13.46503,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Markgrafendamm 33",
+        "station_id": 581,
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38451,
+          52.53113
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.53113,
+        "limitdiff": "über",
+        "lng": 13.38451,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Invalidenstraße 30",
+        "station_id": 582,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.43489,
+          52.5231
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5231,
+        "limitdiff": "genau auf",
+        "lng": 13.43489,
+        "no2_mean": 40,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Landsberger Allee 6-8",
+        "station_id": 547,
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.30855,
+          52.50639
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.50639,
+        "limitdiff": "unter",
+        "lng": 13.30855,
+        "no2_mean": 39,
+        "quartile": "mittleren",
+        "quelle": "Land Berlin",
+        "station_address": "Kantstraße 117",
+        "station_id": 528,
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3284,
+          52.52903
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.52903,
+        "limitdiff": "unter",
+        "lng": 13.3284,
+        "no2_mean": 38,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Beusselstraße 66",
+        "station_id": 504,
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.31259,
+          52.57014
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.57014,
+        "limitdiff": "unter",
+        "lng": 13.31259,
+        "no2_mean": 34,
+        "quartile": "unteren",
+        "quelle": "Land Berlin",
+        "station_address": "Eichborndamm 23-25",
+        "station_id": 579,
+        "station_ort": "Reinickendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.350324,
+          52.487561
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.487561,
+        "limitdiff": "unter",
+        "lng": 13.350324,
+        "no2_mean": 30,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Wartburgstraße 6",
+        "station_id": "TU1",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3429,
+          52.5265
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5265,
+        "limitdiff": "über",
+        "lng": 13.3429,
+        "no2_mean": 53,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Turmstraße 28",
+        "station_id": "TU2",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.351,
+          52.5324
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5324,
+        "limitdiff": "über",
+        "lng": 13.351,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Rathenower Straße 26",
+        "station_id": "TU3",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.359,
+          52.5468
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5468,
+        "limitdiff": "über",
+        "lng": 13.359,
+        "no2_mean": 54,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Müllerstraße 152",
+        "station_id": "TU4",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3278,
+          52.5638
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5638,
+        "limitdiff": "über",
+        "lng": 13.3278,
+        "no2_mean": 55,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kurt-Schumacher-Platz",
+        "station_id": "TU5",
+        "station_ort": "Reinickendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2864,
+          52.5953
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5953,
+        "limitdiff": "deutlich über",
+        "lng": 13.2864,
+        "no2_mean": 59,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Waidmannsluster Damm 11",
+        "station_id": "TU6",
+        "station_ort": "Reinickendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3032,
+          52.6007
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.6007,
+        "limitdiff": "unter",
+        "lng": 13.3032,
+        "no2_mean": 31,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Egidystraße 19A",
+        "station_id": "TU7",
+        "station_ort": "Reinickendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4035,
+          52.5543865
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5543865,
+        "limitdiff": "über",
+        "lng": 13.4035,
+        "no2_mean": 55,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Bornholmer Straße 72A",
+        "station_id": "TU8",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3944,
+          52.5648
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5648,
+        "limitdiff": "unter",
+        "lng": 13.3944,
+        "no2_mean": 37,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Wollankstraße",
+        "station_id": "TU9",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4233,
+          52.553
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.553,
+        "limitdiff": "unter",
+        "lng": 13.4233,
+        "no2_mean": 39,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Wisbyer Straße 50-53",
+        "station_id": "TU10",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4584,
+          52.5498
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5498,
+        "limitdiff": "über",
+        "lng": 13.4584,
+        "no2_mean": 49,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Albertinenstraße",
+        "station_id": "TU11",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4004,
+          52.5296
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5296,
+        "limitdiff": "über",
+        "lng": 13.4004,
+        "no2_mean": 51,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Torstraße 125",
+        "station_id": "TU12",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38813,
+          52.52624
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.52624,
+        "limitdiff": "unter",
+        "lng": 13.38813,
+        "no2_mean": 31,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Oranienburger Straße 50A",
+        "station_id": "TU13",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.313,
+          52.4997
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4997,
+        "limitdiff": "über",
+        "lng": 13.313,
+        "no2_mean": 43,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Olivaer Platz 17",
+        "station_id": "TU14",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3276,
+          52.4865
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4865,
+        "limitdiff": "unter",
+        "lng": 13.3276,
+        "no2_mean": 37,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Berliner Straße 148",
+        "station_id": "TU15",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.34459,
+          52.47916
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.47916,
+        "limitdiff": "deutlich über",
+        "lng": 13.34459,
+        "no2_mean": 60,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Innsbrucker Platz",
+        "station_id": "TU16",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3203,
+          52.4774
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.4774,
+        "limitdiff": "unter",
+        "lng": 13.3203,
+        "no2_mean": 31,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Laubacher Straße 29",
+        "station_id": "TU17",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.37613,
+          52.456019
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.456019,
+        "limitdiff": "über",
+        "lng": 13.37613,
+        "no2_mean": 44,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Attilastraße 177",
+        "station_id": "TU18",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38714,
+          52.49281
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.49281,
+        "limitdiff": "über",
+        "lng": 13.38714,
+        "no2_mean": 54,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Yorckstraße 90",
+        "station_id": "TU19",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.34764,
+          52.47068
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.47068,
+        "limitdiff": "unter",
+        "lng": 13.34764,
+        "no2_mean": 39,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Grazer Damm",
+        "station_id": "TU20",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3295,
+          52.4655
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4655,
+        "limitdiff": "über",
+        "lng": 13.3295,
+        "no2_mean": 41,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Walther-Schreiber-Platz",
+        "station_id": "TU21",
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.385323,
+          52.465842
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.465842,
+        "limitdiff": "über",
+        "lng": 13.385323,
+        "no2_mean": 41,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Tempelhofer Damm",
+        "station_id": "TU22",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2731,
+          52.5098
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5098,
+        "limitdiff": "über",
+        "lng": 13.2731,
+        "no2_mean": 49,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Theodor-Heuss-Platz 4",
+        "station_id": "TU23",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2879,
+          52.5104
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5104,
+        "limitdiff": "über",
+        "lng": 13.2879,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kaiserdamm 15-16",
+        "station_id": "TU24",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3024,
+          52.499
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.499,
+        "limitdiff": "über",
+        "lng": 13.3024,
+        "no2_mean": 45,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kurfürstendamm 153",
+        "station_id": "TU25",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4735,
+          52.514
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.514,
+        "limitdiff": "über",
+        "lng": 13.4735,
+        "no2_mean": 51,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Frankfurter Allee 104",
+        "station_id": "TU26",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4949365,
+          52.51177
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51177,
+        "limitdiff": "unter",
+        "lng": 13.4949365,
+        "no2_mean": 32,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Frankfurter Allee 227",
+        "station_id": "TU27",
+        "station_ort": "Lichtenberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4336,
+          52.5359
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5359,
+        "limitdiff": "deutlich über",
+        "lng": 13.4336,
+        "no2_mean": 64,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Danziger Straße 120",
+        "station_id": "TU28",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4181,
+          52.5369
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5369,
+        "limitdiff": "unter",
+        "lng": 13.4181,
+        "no2_mean": 36,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kollwitzplatz",
+        "station_id": "TU29",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.456666,
+          52.473408
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.473408,
+        "limitdiff": "über",
+        "lng": 13.456666,
+        "no2_mean": 43,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Sonnenallee 222",
+        "station_id": "TU30",
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.44011,
+          52.481844
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.481844,
+        "limitdiff": "deutlich über",
+        "lng": 13.44011,
+        "no2_mean": 56,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Sonnenallee 105",
+        "station_id": "TU31",
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.424885,
+          52.486312
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.486312,
+        "limitdiff": "über",
+        "lng": 13.424885,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Hermannplatz",
+        "station_id": "TU32",
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.427422,
+          52.499204
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.499204,
+        "limitdiff": "deutlich über",
+        "lng": 13.427422,
+        "no2_mean": 77,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Görlitzer Bahnhof",
+        "station_id": "TU33",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.416411,
+          52.511301
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.511301,
+        "limitdiff": "deutlich über",
+        "lng": 13.416411,
+        "no2_mean": 60,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Heinrich-Heine-Straße",
+        "station_id": "TU34",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3214,
+          52.4565
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4565,
+        "limitdiff": "über",
+        "lng": 13.3214,
+        "no2_mean": 44,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Rathaus Steglitz",
+        "station_id": "TU35",
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2709,
+          52.4501
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4501,
+        "limitdiff": "unter",
+        "lng": 13.2709,
+        "no2_mean": 28,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Oskar-Helene-Heim",
+        "station_id": "TU36",
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2593,
+          52.4305
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4305,
+        "limitdiff": "unter",
+        "lng": 13.2593,
+        "no2_mean": 35,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Teltower Damm",
+        "station_id": "TU37",
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2317,
+          52.437
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.437,
+        "limitdiff": "unter",
+        "lng": 13.2317,
+        "no2_mean": 27,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Mexikoplatz",
+        "station_id": "TU38",
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3283,
+          52.4289
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4289,
+        "limitdiff": "unter",
+        "lng": 13.3283,
+        "no2_mean": 29,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Bahnhof Lichterfelde Ost",
+        "station_id": "TU39",
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3459,
+          52.4365
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4365,
+        "limitdiff": "deutlich über",
+        "lng": 13.3459,
+        "no2_mean": 61,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kaiser-Wilhelm-Straße 80",
+        "station_id": "TU40",
+        "station_ort": "Steglitz-Zehlendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.351556,
+          52.41375
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.41375,
+        "limitdiff": "unter",
+        "lng": 13.351556,
+        "no2_mean": 28,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Hildburghauser Straße 31",
+        "station_id": "TU41",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.41722,
+          52.498753
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.498753,
+        "limitdiff": "deutlich über",
+        "lng": 13.41722,
+        "no2_mean": 61,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kottbusser Tor",
+        "station_id": "TU42",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.418896,
+          52.501273
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.501273,
+        "limitdiff": "deutlich über",
+        "lng": 13.418896,
+        "no2_mean": 71,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Oranienstraße 176",
+        "station_id": "TU43",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.39625,
+          52.4982
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4982,
+        "limitdiff": "deutlich über",
+        "lng": 13.39625,
+        "no2_mean": 68,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Zossener Brücke",
+        "station_id": "TU44",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.368886,
+          52.507806
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.507806,
+        "limitdiff": "unter",
+        "lng": 13.368886,
+        "no2_mean": 26,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Potsdamer Platz",
+        "station_id": "TU45",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.36624,
+          52.50304
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.50304,
+        "limitdiff": "über",
+        "lng": 13.36624,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Lützowstraße 23",
+        "station_id": "TU46",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38122,
+          52.51476
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.51476,
+        "limitdiff": "über",
+        "lng": 13.38122,
+        "no2_mean": 45,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Wilhelmstraße 75",
+        "station_id": "TU47",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38478,
+          52.51023
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51023,
+        "limitdiff": "deutlich über",
+        "lng": 13.38478,
+        "no2_mean": 58,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Leipziger Straße 120",
+        "station_id": "TU48",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.441447,
+          52.501499
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.501499,
+        "limitdiff": "über",
+        "lng": 13.441447,
+        "no2_mean": 55,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Schlesisches Tor",
+        "station_id": "TU49",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.458875,
+          52.493074
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.493074,
+        "limitdiff": "über",
+        "lng": 13.458875,
+        "no2_mean": 46,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Puschkinallee 13",
+        "station_id": "TU50",
+        "station_ort": "Treptow-Köpenick"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.446284,
+          52.502684
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.502684,
+        "limitdiff": "über",
+        "lng": 13.446284,
+        "no2_mean": 52,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Mühlenstraße 78",
+        "station_id": "TU51",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4168,
+          52.5213
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5213,
+        "limitdiff": "über",
+        "lng": 13.4168,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Alexanderstraße 11",
+        "station_id": "TU52",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4132,
+          52.524
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.524,
+        "limitdiff": "über",
+        "lng": 13.4132,
+        "no2_mean": 52,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Alexanderstraße 1",
+        "station_id": "TU53",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4008,
+          52.52365
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.52365,
+        "limitdiff": "über",
+        "lng": 13.4008,
+        "no2_mean": 47,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Hackescher Markt",
+        "station_id": "TU54",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.40014,
+          52.52023
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.52023,
+        "limitdiff": "unter",
+        "lng": 13.40014,
+        "no2_mean": 34,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Friedrichsbrücke",
+        "station_id": "TU55",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4124,
+          52.5405
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5405,
+        "limitdiff": "über",
+        "lng": 13.4124,
+        "no2_mean": 43,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Schönhauser Allee 44-45",
+        "station_id": "TU56",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3283,
+          52.4767
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.4767,
+        "limitdiff": "über",
+        "lng": 13.3283,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Bundesplatz",
+        "station_id": "TU59",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.306,
+          52.4798
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4798,
+        "limitdiff": "unter",
+        "lng": 13.306,
+        "no2_mean": 26,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Forckenbeckstraße 6",
+        "station_id": "TU60",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2835,
+          52.5067
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5067,
+        "limitdiff": "über",
+        "lng": 13.2835,
+        "no2_mean": 46,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Messe Nord ICC",
+        "station_id": "TU61",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3085,
+          52.5575
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5575,
+        "limitdiff": "deutlich über",
+        "lng": 13.3085,
+        "no2_mean": 74,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kurt-Schumacher-Damm 154",
+        "station_id": "TU62",
+        "station_ort": "Reinickendorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3514585,
+          52.5271109
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5271109,
+        "limitdiff": "unter",
+        "lng": 13.3514585,
+        "no2_mean": 32,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Wilsnacker Straße 64",
+        "station_id": "TU63",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.35768,
+          52.4869
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.4869,
+        "limitdiff": "deutlich über",
+        "lng": 13.35768,
+        "no2_mean": 66,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kaiser-Wilhelm-Platz 5",
+        "station_id": "TU64",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.424661,
+          52.480515
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.480515,
+        "limitdiff": "über",
+        "lng": 13.424661,
+        "no2_mean": 50,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Boddinstraße",
+        "station_id": "TU65",
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.460767,
+          52.454443
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.454443,
+        "limitdiff": "genau auf",
+        "lng": 13.460767,
+        "no2_mean": 40,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Späthstraße",
+        "station_id": "TU66",
+        "station_ort": "Treptow-Köpenick"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3777,
+          52.472242
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.472242,
+        "limitdiff": "über",
+        "lng": 13.3777,
+        "no2_mean": 49,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Boelckestraße 134",
+        "station_id": "TU67",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.5164,
+          52.5358
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5358,
+        "limitdiff": "über",
+        "lng": 13.5164,
+        "no2_mean": 45,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Rhinstraße",
+        "station_id": "TU68",
+        "station_ort": "Lichtenberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4616,
+          52.5301
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5301,
+        "limitdiff": "über",
+        "lng": 13.4616,
+        "no2_mean": 48,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Landsberger Allee",
+        "station_id": "TU69",
+        "station_ort": "Lichtenberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4533,
+          52.5144
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5144,
+        "limitdiff": "über",
+        "lng": 13.4533,
+        "no2_mean": 46,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Frankfurter Tor",
+        "station_id": "TU70",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4169,
+          52.5268
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5268,
+        "limitdiff": "über",
+        "lng": 13.4169,
+        "no2_mean": 41,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Mollstraße ",
+        "station_id": "TU71",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.40796,
+          52.51619
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51619,
+        "limitdiff": "deutlich über",
+        "lng": 13.40796,
+        "no2_mean": 61,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Poststraße 17",
+        "station_id": "TU72",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.34968,
+          52.51366
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.51366,
+        "limitdiff": "unter",
+        "lng": 13.34968,
+        "no2_mean": 27,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Großer Stern",
+        "station_id": "TU73",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3672,
+          52.5259
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5259,
+        "limitdiff": "über",
+        "lng": 13.3672,
+        "no2_mean": 53,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Minna-Cauer-Straße",
+        "station_id": "TU74",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.349,
+          52.542
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.542,
+        "limitdiff": "über",
+        "lng": 13.349,
+        "no2_mean": 45,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Amrumer Straße 9",
+        "station_id": "TU75",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3771748,
+          52.5568471
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5568471,
+        "limitdiff": "deutlich über",
+        "lng": 13.3771748,
+        "no2_mean": 61,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Drontheimer Straße 1",
+        "station_id": "TU76",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2935,
+          52.5346
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5346,
+        "limitdiff": "deutlich über",
+        "lng": 13.2935,
+        "no2_mean": 57,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Jakob-Kaiser-Platz",
+        "station_id": "TU77",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2497,
+          52.5236
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5236,
+        "limitdiff": "über",
+        "lng": 13.2497,
+        "no2_mean": 41,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Spandauer Damm 265",
+        "station_id": "TU78",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.2783,
+          52.502
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.502,
+        "limitdiff": "unter",
+        "lng": 13.2783,
+        "no2_mean": 36,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Motel Restaurant Avus",
+        "station_id": "TU79",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3041,
+          52.518
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.518,
+        "limitdiff": "über",
+        "lng": 13.3041,
+        "no2_mean": 50,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Otto-Suhr-Allee 125",
+        "station_id": "TU80",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3299,
+          52.4953
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.4953,
+        "limitdiff": "über",
+        "lng": 13.3299,
+        "no2_mean": 50,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Spichernstraße",
+        "station_id": "TU81",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.34832,
+          52.48148
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.48148,
+        "limitdiff": "deutlich über",
+        "lng": 13.34832,
+        "no2_mean": 57,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Hauptstraße 112",
+        "station_id": "TU82",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.35375,
+          52.49875
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.49875,
+        "limitdiff": "unter",
+        "lng": 13.35375,
+        "no2_mean": 37,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Nollendorfplatz",
+        "station_id": "TU83",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.366531,
+          52.493687
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.493687,
+        "limitdiff": "über",
+        "lng": 13.366531,
+        "no2_mean": 47,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Goebenstraße 16",
+        "station_id": "TU84",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.38534,
+          52.48534
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.48534,
+        "limitdiff": "über",
+        "lng": 13.38534,
+        "no2_mean": 55,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Platz der Luftbrücke",
+        "station_id": "TU85",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.471,
+          52.5064
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5064,
+        "limitdiff": "deutlich über",
+        "lng": 13.471,
+        "no2_mean": 60,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Boxhagener Straße 66",
+        "station_id": "TU86",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4337,
+          52.5233
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.5233,
+        "limitdiff": "über",
+        "lng": 13.4337,
+        "no2_mean": 49,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Platz der Vereinten Nationen",
+        "station_id": "TU87",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.401754,
+          52.414109
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.414109,
+        "limitdiff": "über",
+        "lng": 13.401754,
+        "no2_mean": 41,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Lichtenrader Damm 5",
+        "station_id": "TU88",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.417929,
+          52.475026
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.475026,
+        "limitdiff": "unter",
+        "lng": 13.417929,
+        "no2_mean": 29,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Tempelhofer Feld",
+        "station_id": "TU89",
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.47767,
+          52.53716
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.53716,
+        "limitdiff": "unter",
+        "lng": 13.47767,
+        "no2_mean": 31,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Konrad-Wolf-Straße 66A",
+        "station_id": "TU90",
+        "station_ort": "Lichtenberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3188166,
+          52.4713915
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4713915,
+        "limitdiff": "unter",
+        "lng": 13.3188166,
+        "no2_mean": 33,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Südwestkorso 20",
+        "station_id": "TU91",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.530238,
+          52.430994
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.430994,
+        "limitdiff": "unter",
+        "lng": 13.530238,
+        "no2_mean": 27,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Brook-Taylor-Straße 6",
+        "station_id": "TU92",
+        "station_ort": "Treptow-Köpenick"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.381471,
+          52.4939425
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4939425,
+        "limitdiff": "unter",
+        "lng": 13.381471,
+        "no2_mean": 29,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Hornstraße 20",
+        "station_id": "TU93",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.373813,
+          52.444991
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.444991,
+        "limitdiff": "unter",
+        "lng": 13.373813,
+        "no2_mean": 35,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kaiserstraße 4",
+        "station_id": "TU94",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3419762,
+          52.5263904
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5263904,
+        "limitdiff": "deutlich über",
+        "lng": 13.3419762,
+        "no2_mean": 72,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Kleiner Tiergarten",
+        "station_id": "TU95",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.424099,
+          52.539362
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.539362,
+        "limitdiff": "deutlich über",
+        "lng": 13.424099,
+        "no2_mean": 68,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Prenzlauer Allee 195A",
+        "station_id": "TU96",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.441834,
+          52.532118
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.532118,
+        "limitdiff": "deutlich über",
+        "lng": 13.441834,
+        "no2_mean": 67,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Danziger Straße 183",
+        "station_id": "TU97",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.473149,
+          52.473149
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.473149,
+        "limitdiff": "deutlich unter",
+        "lng": 13.473149,
+        "no2_mean": 25,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Dammweg 192-194",
+        "station_id": "TU98",
+        "station_ort": "Treptow-Köpenick"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4778086096,
+          52.5370651168
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5370651168,
+        "limitdiff": "unter",
+        "lng": 13.4778086096,
+        "no2_mean": 29,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Konrad-Wolf-Straße 66A",
+        "station_id": "TU99",
+        "station_ort": "Lichtenberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.275911,
+          52.508163
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.508163,
+        "limitdiff": "unter",
+        "lng": 13.275911,
+        "no2_mean": 30,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Masurenallee 8-14, Innenhof",
+        "station_id": "TU105",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.437999,
+          52.469618
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.469618,
+        "limitdiff": "genau auf",
+        "lng": 13.437999,
+        "no2_mean": 40,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Emser Straße 12, 4. Stock",
+        "station_id": "TU107",
+        "station_ort": "Neukölln"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.4113246,
+          52.560288
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.560288,
+        "limitdiff": "unter",
+        "lng": 13.4113246,
+        "no2_mean": 31,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Mühlenstraße 48, 2. Stock",
+        "station_id": "TU108",
+        "station_ort": "Pankow"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.374992,
+          52.4856517596
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.4856517596,
+        "limitdiff": "über",
+        "lng": 13.374992,
+        "no2_mean": 42,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Eylauer Straße 12, 1. Stock",
+        "station_id": "TU109",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.276628,
+          52.507643
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.507643,
+        "limitdiff": "über",
+        "lng": 13.276628,
+        "no2_mean": 53,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Masurenallee 8-14, Straßenseite",
+        "station_id": "TU110",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.374402,
+          52.485171
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.485171,
+        "limitdiff": "unter",
+        "lng": 13.374402,
+        "no2_mean": 31,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Eylauer Straße 12, Innenhof",
+        "station_id": "TU111",
+        "station_ort": "Friedrichshain-Kreuzberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.365944,
+          52.472253
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.472253,
+        "limitdiff": "über",
+        "lng": 13.365944,
+        "no2_mean": 46,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Reichartstraße 2",
+        "station_id": "TU112",
+        "station_ort": "Tempelhof-Schöneberg"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3342856169,
+          52.5087511771
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5087511771,
+        "limitdiff": "unter",
+        "lng": 13.3342856169,
+        "no2_mean": 37,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Hardenbergplatz 15",
+        "station_id": "TU115",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.342629,
+          52.545267
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.545267,
+        "limitdiff": "über",
+        "lng": 13.342629,
+        "no2_mean": 54,
+        "quartile": "oberen",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Seestraße 13",
+        "station_id": "TU116",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.33556,
+          52.52927
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.52927,
+        "limitdiff": "unter",
+        "lng": 13.33556,
+        "no2_mean": 30,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Oldenburger Straße 42",
+        "station_id": "TU117",
+        "station_ort": "Mitte"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.3296,
+          52.5104
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.5104,
+        "limitdiff": "unter",
+        "lng": 13.3296,
+        "no2_mean": 37,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Fasanenstraße 1",
+        "station_id": "TU122",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.332505,
+          52.511289
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "in einem Wohngebiet",
+        "lat": 52.511289,
+        "limitdiff": "unter",
+        "lng": 13.332505,
+        "no2_mean": 29,
+        "quartile": "unteren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Müller-Breslau-Straße 8",
+        "station_id": "TU123",
+        "station_ort": "Charlottenburg-Wilmersdorf"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          13.541939,
+          52.435292
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "kategorie": "an einer verkehrsreichen Straße",
+        "lat": 52.435292,
+        "limitdiff": "über",
+        "lng": 13.541939,
+        "no2_mean": 47,
+        "quartile": "mittleren",
+        "quelle": "rbb/TU Berlin",
+        "station_address": "Dörpfeldstraße 1",
+        "station_id": "TU124",
+        "station_ort": "Treptow-Köpenick"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

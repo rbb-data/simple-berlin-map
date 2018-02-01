@@ -1,0 +1,55 @@
+@import "~@shared/styles/colors.sass"
+@import "~@shared/styles/breakpoints.sass"
+
+.map
+  width: 100%
+  height: auto
+
+  \:global
+    .leaflet-tile-pane,
+    .leaflet-tile-pane img
+      // filter: grayscale(1)
+
+    .leaflet-control-attribution
+      font-size: 11px
+      a
+        color: $grey
+
+    .leaflet-control-zoom
+      box-shadow: 1px 1px 2px -2px black
+      border: 0
+      margin-right: 20px
+
+      // unfortunately there is a rendering bug in ie11 which causes the zoom
+      // controls to be rendered multiple times. this is hacky and i'm sorry.
+      + .leaflet-control-zoom
+        display: none
+
+      @include breakpoint(small)
+        margin-right: 15px
+
+      a
+        background-color: $dark-grey
+        color: white
+
+        &.leaflet-disabled,
+        &:hover.leaflet-disabled
+          color: $light-grey
+          background-color: $background-grey
+
+        &:hover
+          background-color: $grey
+
+        &:first-child
+          border-top-left-radius: 2px
+          border-top-right-radius: 2px
+          border-bottom: 1px solid $light-grey
+
+        &:last-child
+          border-bottom-left-radius: 2px
+          border-bottom-right-radius: 2px
+
+.addressSearch
+  position: absolute
+  top: 20px
+  z-index: 1100
