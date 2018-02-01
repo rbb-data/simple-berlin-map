@@ -1,7 +1,7 @@
 import { h, Component } from 'preact'
 
 import 'leaflet/dist/leaflet.css'
-import { Map as LeafletMap, ZoomControl, GeoJSON, Pane, Rectangle } from 'react-leaflet'
+import { Map as LeafletMap, ZoomControl, GeoJSON, Pane } from 'react-leaflet'
 import { BingLayer } from 'react-leaflet-bing'
 
 import Markers from '@components/Markers'
@@ -80,7 +80,7 @@ export default class Map extends Component {
     const lineProps = selectedMarker ? {
       latLng: { lat: selectedMarker.properties.lat, lng: selectedMarker.properties.lng },
       position: { bottom: 0, left: 0.5, usePercentValues: true },
-      color: colors.red,
+      color: selectedMarker.properties.schultyp === 'Gymnasium' ? colors.sGym : colors.sInt,
       weight: 2
     } : {}
 
@@ -99,7 +99,6 @@ export default class Map extends Component {
         <BingLayer type='CanvasGray' bingkey={BING_KEY} />
         <GeoJSON data={berlinMask} {...maskProps} />
         <ZoomControl position='bottomright' />
-        {/* <Rectangle bounds={mapProps.maxBounds} /> */}
 
         <Markers {...markersProps} />
         <SearchResultMarker searchResult={searchResult} />

@@ -36,6 +36,7 @@ export default class StationsLayer extends Component {
     const isSelected = marker === this.props.selectedMarker
     const radius = this.getCircleSize(this.state.mapZoom)
     const selectHandler = this.handleMarkerSelect(marker)
+    const isGymnasium = marker.properties.schultyp === 'Gymnasium'
 
     const markerProps = {
       key: marker.properties.station_id,
@@ -52,7 +53,7 @@ export default class StationsLayer extends Component {
       center: featureToLatLng(marker),
       fillOpacity: 1,
       radius: isSelected ? radius + 3 : radius,
-      fillColor: colors.red,
+      fillColor: isGymnasium ? colors.sGym : colors.sInt,
       stroke: isSelected || isTouchEnabled,
       weight: isSelected ? 1.5 : 20 - radius,
       color: isSelected ? 'white' : 'transparent',

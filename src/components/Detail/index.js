@@ -1,6 +1,7 @@
 import { h, Component } from 'preact'
 import _ from './styles.sass'
 import RadioFilter from '@components/RadioFilter'
+import colors from '@shared/styles/colors.sass'
 
 export default class Detail extends Component {
   handleSelectSchoolType = ({ selectedValue }) => {
@@ -15,7 +16,11 @@ export default class Detail extends Component {
     const selectedMarkerProperties = hasMarker ? selectedMarker.properties : {}
 
     const className = `${_.sidebar} ${props.class} ${hasMarker && _.hasMarker}`
-    const styles = hasMarker && { borderColor: 'red' }
+    const styles = hasMarker &&
+      { borderColor: selectedMarker.properties.schultyp === 'Gymnasium'
+        ? colors.sGym
+        : colors.sInt
+      }
 
     const { name } = selectedMarkerProperties
 
