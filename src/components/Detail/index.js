@@ -26,8 +26,8 @@ export default class Detail extends Component {
       className: _.schoolTypeFilter,
       options: [
         { value: 'all', display: 'Alle Schultypen' },
-        { value: 'gymnasium', display: 'Gymnasien' },
-        { value: 'integrierte_sekundarschulen', display: 'Integrierte Sekundarschulen' }
+        { value: 'Gymnasium', display: 'Gymnasien' },
+        { value: 'Integrierte Sekundarschulen', display: 'Integrierte Sekundarschulen' }
       ]
     }
 

@@ -89,7 +89,7 @@ export default class Map extends Component {
       isTouchEnabled: isTouchEnabled,
       isOnSmallScreen: isOnSmallScreen,
       markers: props.markers.filter(marker =>
-        props.visibleSchoolType === 'all' || props.visibleSchoolType === marker.schultyp)
+        props.visibleSchoolType === 'all' || props.visibleSchoolType === marker.properties.schultyp)
     }
 
     return (<div class={props.class}>

@@ -18,7 +18,7 @@ export const actions = {
 
   setVisibleSchoolType: (state, visibleSchoolType) => {
     const isSelectedMarkerStillVisible = visibleSchoolType === 'all' ||
-      visibleSchoolType === (state.selectedMarker || {}).schultyp
+      visibleSchoolType === (state.selectedMarker || {}).properties.schultyp
 
     return {
       ...state,
