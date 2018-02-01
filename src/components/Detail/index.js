@@ -1,71 +1,49 @@
 import { h, Component } from 'preact'
 import _ from './styles.sass'
+import RadioFilter from '@components/RadioFilter'
 
-export default class Sidebar extends Component {
-  toggleLimitFilter = () => {
-    this.context.actions.toggleLimitFilter()
+export default class Detail extends Component {
+  handleSelectSchoolType = ({ selectedValue }) => {
+    console.log(selectedValue)
+    this.context.actions.setVisibleSchoolType(selectedValue)
   }
 
   render (props) {
-    const { selectedStation, cityStationsOnlyFilterIsActive, isOnSmallScreen } = props
-    const hasStation = selectedStation !== undefined
-    const selectedStationProperties = hasStation ? selectedStation.properties : {}
+    const { selectedMarker, visibleSchoolType } = props
+    // const isOnSmallScreen = props.isOnSmallScreen
+    const hasMarker = selectedMarker !== null
+    const selectedMarkerProperties = hasMarker ? selectedMarker.properties : {}
 
-    const className = `${_.sidebar} ${props.class} ${hasStation && _.hasStation}`
-    const styles = selectedStation !== undefined &&
-      { borderColor: props.colorScale(selectedStation.properties.no2_mean) }
+    const className = `${_.sidebar} ${props.class} ${hasMarker && _.hasMarker}`
+    const styles = hasMarker && { borderColor: 'red' }
 
-    const {
-      station_address: address,
-      no2_mean: no2Mean,
-      station_ort: burrow,
-      quelle: source,
-      quartile,
-      limitdiff,
-      kategorie
-    } = selectedStationProperties
+    const { name } = selectedMarkerProperties
+
+    const radioProps = {
+      id: 'school-type-filter',
+      title: 'nach Schultyp filtern',
+      selectedValue: visibleSchoolType,
+      className: _.schoolTypeFilter,
+      options: [
+        { value: 'all', display: 'Alle Schultypen' },
+        { value: 'gymnasium', display: 'Gymnasien' },
+        { value: 'integrierte_sekundarschulen', display: 'Integrierte Sekundarschulen' }
+      ]
+    }
 
     return <div class={className}>
       <div class={_.content} style={styles}>
         <div>
           <div class={_.titleWrapper}>
             <h2 class={_.title}>
-              { hasStation
-                ? <span>{address} <span class={_.subhead}>{burrow}</span></span>
-                : 'Stickstoffdioxide in Berlin'
-              }
+              { hasMarker ? name : 'Weiterführende Schulen in Berlin' }
             </h2>
-            { hasStation &&
-              <dl class={_.source}>
-                <dt>Quelle:</dt>
-                <dd>{source}</dd>
-              </dl>
-            }
           </div>
-
-          { hasStation
-            ? <p class={_.infoText}>
-              Der Messwert von <strong>{no2Mean} µg/m³</strong> liegt im {quartile} Bereich
-              und {limitdiff} dem gesetzlich erlaubten Grenzwert von 40 Mikrogramm
-              Stickstoffdioxid pro Kubikmeter Luft.
-              Diese Messstation liegt <strong>{kategorie}</strong>.
-            </p>
-            : <p class={_.helpText}>
-              { isOnSmallScreen
-                ? 'Klicken Sie auf einen Punkt, '
-                : 'Fahren Sie mit der Maus über einzelne Punkte, '
-              }
-              um die genaue NO₂-Belastung zu sehen.
-            </p>
-          }
         </div>
       </div>
 
       <div class={_.controlls}>
-        <div class={_.filter} onClick={this.context.actions.toggleCityStationsFilter}>
-          <input id='threshold-toggle' type='checkbox' checked={cityStationsOnlyFilterIsActive} />
-          <label for='threshold-toggle'>Nur landeseigene Messstellen anzeigen.</label>
-        </div>
+        <RadioFilter {...radioProps} onChange={this.handleSelectSchoolType} />
       </div>
     </div>
   }

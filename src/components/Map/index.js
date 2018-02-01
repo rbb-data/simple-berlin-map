@@ -29,6 +29,7 @@ export default class Map extends Component {
   render (props) {
     const {
       selectedMarker,
+      isTouchEnabled,
       isOnSmallScreen,
       searchResult
     } = props
@@ -83,6 +84,14 @@ export default class Map extends Component {
       weight: 2
     } : {}
 
+    const markersProps = {
+      selectedMarker: selectedMarker,
+      isTouchEnabled: isTouchEnabled,
+      isOnSmallScreen: isOnSmallScreen,
+      markers: props.markers.filter(marker =>
+        props.visibleSchoolType === 'all' || props.visibleSchoolType === marker.schultyp)
+    }
+
     return (<div class={props.class}>
       <AddressSearch class={c.addressSearch} {...searchProps} />
 
@@ -92,7 +101,7 @@ export default class Map extends Component {
         <ZoomControl position='bottomright' />
         {/* <Rectangle bounds={mapProps.maxBounds} /> */}
 
-        <Markers {...props} />
+        <Markers {...markersProps} />
         <SearchResultMarker searchResult={searchResult} />
         {/*  markerPane has zIndex: 600 and TooltipPane has zIndex: 650 */}
         <Pane name='linePane' style={{ zIndex: 620 }}>

@@ -1,19 +1,15 @@
-/* global fetch */
-
-import { h, render, Component } from 'preact'
-import Hover from 'hover'
-import storeDescriptor from '@root/store.js'
+import { h, Component } from 'preact'
 
 import Map from '@components/Map'
-import Sidebar from '@components/Detail'
-import c from './styles.sass'
+import Detail from '@components/Detail'
+import _ from './styles.sass'
 
 // ready, set, GO!
 export default class MapWithDetail extends Component {
   render (props) {
-    return <div class={c.app}>
-      <Map class={c.map} {...props} />
-      <Sidebar className={c.sidebar} {...props} />
+    return <div class={_.app}>
+      <Map class={_.map} {...props} />
+      <Detail className={_.sidebar} {...props} />
     </div>
   }
 }

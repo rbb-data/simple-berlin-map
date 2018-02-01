@@ -16,7 +16,16 @@ export const actions = {
 
   setSearchResult: (state, searchResult) => ({ ...state, searchResult }),
 
-  setVisibleSchoolType: (state, visibleSchoolType) => ({ ...state, visibleSchoolType }),
+  setVisibleSchoolType: (state, visibleSchoolType) => {
+    const isSelectedMarkerStillVisible = visibleSchoolType === 'all' ||
+      visibleSchoolType === (state.selectedMarker || {}).schultyp
+
+    return {
+      ...state,
+      selectedMarker: isSelectedMarkerStillVisible ? state.selectedMarker : null,
+      visibleSchoolType
+    }
+  },
 
   updateScreenType: (state, { screenWidth }) => ({
     ...state,

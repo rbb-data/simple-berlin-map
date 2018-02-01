@@ -124,35 +124,3 @@
 
   @include breakpoint(small)
     flex-direction: column
-
-  .filter
-    padding: 10px 15px
-    border-left: 1px solid white
-
-    &:first-child
-      border: 0
-
-    @include breakpoint(small)
-      border-left: 0
-      border-top: 1px solid white
-
-  input
-    width: 13px
-    margin: 0 10px 0 0
-    margin-right: 7px
-    pointer-events: none
-
-  label
-    display: inline-block
-    width: calc(100% - 23px)
-    pointer-events: none
-    vertical-align: text-top
-
-  &::before
-    content: ''
-    background: linear-gradient(to bottom, rgba(234, 234, 234, 0), $background-grey)
-    position: absolute
-    top: -19px
-    left: 2px
-    width: calc(100% - 4px)
-    height: 15px
