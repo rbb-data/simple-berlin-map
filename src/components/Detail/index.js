@@ -9,7 +9,7 @@ export default class Detail extends Component {
   }
 
   render (props) {
-    const { selectedMarker, visibleSchoolType } = props
+    const { selectedMarker, visibleSchoolType, isOnSmallScreen } = props
     // const isOnSmallScreen = props.isOnSmallScreen
     const hasMarker = selectedMarker !== null
     const selectedMarkerProperties = hasMarker ? selectedMarker.properties : {}
@@ -40,6 +40,17 @@ export default class Detail extends Component {
             </h2>
           </div>
         </div>
+
+        { hasMarker
+          ? 'content goes here' // i think the content here is going to be complex so it might could be its own component
+          : <p class={_.helpText}>
+            { isOnSmallScreen
+              ? 'Klicken Sie auf einen Punkt, '
+              : 'Fahren Sie mit der Maus über einzelne Punkte, '
+            }
+            um die genaue NO₂-Belastung zu sehen.
+          </p>
+        }
       </div>
 
       <div class={_.controlls}>
