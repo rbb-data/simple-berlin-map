@@ -8,25 +8,7 @@ import searchIcon from './img/searchIcon.svg'
 import closeIcon from './img/closeIcon.svg'
 
 function featureLabel (feature) {
-  const p = feature.components
-
   return `${feature.formatted}`
-
-  // if (p._type === 'road') {
-  //return `${p.road}, ${p.postcode} ${p.state}, ${p.city_district}`
-  // }
-
-  // if (p.layer === 'address') {
-  //   if (p.neighbourhood != null && p.neighbourhood !== '') {
-  //     return `${p.name}, ${p.neighbourhood}, ${p.locality}`
-  //   }
-  //
-  //   if (p.borough != null && p.borough !== '') {
-  //     return `${p.name}, ${p.borough}, ${p.locality}`
-  //   }
-  // }
-
-  // return p.label.replace('Germany', 'Deutschland')
 }
 
 export default class AddressSearch extends Component {
@@ -248,7 +230,7 @@ export default class AddressSearch extends Component {
       <div class={style.infoWrapper}>
         <button class={style.infoButton} onClick={this.toggleInfoText}>i</button>
         <div class={style.infoBox}>
-          Bei Nutzung der Suchfunktion werden Daten an <a target='_blank' href='https://mapzen.com/'>Mapzen</a> übertragen.
+          Bei Nutzung der Suchfunktion werden Daten an <a target='_blank' href='https://geocoder.opencagedata.com/'>OpenCage</a> übertragen.
           Weitere Informationen auf der rbb <a target='_blank' href='https://www.rbb-online.de/hilfe/copyright_und_datenschutz/datenschutzerklaerung.html'>
           Datenschutzerklärung</a>.
         </div>
