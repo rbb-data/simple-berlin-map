@@ -17,7 +17,7 @@ export default class Detail extends Component {
 
     const className = `${_.sidebar} ${props.class} ${hasMarker && _.hasMarker}`
     const styles = hasMarker &&
-      { borderColor: selectedMarker.properties.schultyp === 'Gymnasium'
+      { borderColor: selectedMarker.properties.schultyp === 'Gymnasien'
         ? colors.sGym
         : colors.sInt
       }
@@ -31,7 +31,7 @@ export default class Detail extends Component {
       className: _.schoolTypeFilter,
       options: [
         { value: 'all', display: 'Alle Schultypen' },
-        { value: 'Gymnasium', display: 'Gymnasien' },
+        { value: 'Gymnasien', display: 'Gymnasien' },
         { value: 'Integrierte Sekundarschulen', display: 'Integrierte Sekundarschulen' }
       ]
     }

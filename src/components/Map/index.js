@@ -80,7 +80,7 @@ export default class Map extends Component {
     const lineProps = selectedMarker ? {
       latLng: { lat: selectedMarker.properties.lat, lng: selectedMarker.properties.lng },
       position: { bottom: 0, left: 0.5, usePercentValues: true },
-      color: selectedMarker.properties.schultyp === 'Gymnasium' ? colors.sGym : colors.sInt,
+      color: selectedMarker.properties.schultyp === 'Gymnasien' ? colors.sGym : colors.sInt,
       weight: 2
     } : {}
 
