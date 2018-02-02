@@ -43,7 +43,6 @@ export default class AddressSearch extends Component {
   }
 
   handleAutoCompleteResponse = (result) => {
-    console.log(result)
     const features = result.features
       .filter(({components: {_type}}) => _type === 'road' || _type === 'neighbourhood' || _type === 'building')
       .map((feature) => {
@@ -174,10 +173,7 @@ export default class AddressSearch extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    console.log('entered', this.state.inputVisible)
-
     if (this.state.inputVisible || !this.props.isOnSmallScreen) {
-      console.log('input visible')
       const {result, suggestions, highlightedSuggestion} = this.state
 
       // if the user submits twice suggestions will be undefined but the result
