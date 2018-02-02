@@ -36,7 +36,6 @@ export default class Detail extends Component {
         { value: 'Integrierte Sekundarschulen', display: 'Integrierte Sekundarschulen' }
       ]
     }
-    console.log(selectedMarker);
     return <div class={className}>
       <div class={_.content} style={styles}>
         <div>
