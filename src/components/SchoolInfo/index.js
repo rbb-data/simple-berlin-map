@@ -26,8 +26,8 @@ export default class SchoolInfo extends Component {
     } = statistics
 
     return <div>
-      {type} ({legal_status}), {
-        address &&
+      {type} { legal_status && <span>({legal_status}), </span>}{
+        address.street &&
         <span>{address.street}, {address.postcode} {address.city}
           </span>
       }<br />
