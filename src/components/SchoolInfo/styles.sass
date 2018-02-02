@@ -1,0 +1,64 @@
+@import "~@shared/styles/colors.sass"
+@import "~@shared/styles/breakpoints.sass"
+
+.sidebar
+  display: flex
+  flex-flow: column
+  background-color: $background-grey
+
+.content
+  padding: 10px 15px
+  border: 2px solid $dark-grey
+
+  @include breakpoint(small)
+    padding: 15px 10px 10px
+
+.content
+  flex: auto
+  position: relative
+  overflow: auto
+
+.titleWrapper
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  margin-top: 3px
+  margin-bottom: 5px
+
+  @include breakpoint(small)
+    display: block
+    margin-top: 0
+    margin-bottom: 15px
+
+.title
+  font-size: 18px
+  margin: 0
+  margin-bottom: 0
+  margin-right: 5px
+  line-height: 1.2em
+
+  @include breakpoint(small)
+    font-size: 16px
+    margin-bottom: 5px
+
+.helpText
+  color: $dark-grey
+  font-size: 14px
+  font-weight: bold
+  line-height: 1.3em
+  text-align: center
+  padding: 5px 10px
+
+  p
+    margin: 0 10px
+    width: 50%
+
+  @include breakpoint(small)
+    padding: 10px 30px
+
+.controlls
+  display: block
+  border-top: 2px solid white
+
+  @include breakpoint(small)
+    flex-direction: column
