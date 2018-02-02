@@ -53,7 +53,7 @@ export default class Detail extends Component {
               ? 'Klicken Sie auf einen Punkt, '
               : 'Fahren Sie mit der Maus über einzelne Punkte, '
             }
-            um die genaue NO₂-Belastung zu sehen.
+            Details zu den Schulen angezeigt zu bekommen.
           </p>
         }
       </div>
