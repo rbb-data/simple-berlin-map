@@ -32,7 +32,7 @@ export default class Detail extends Component {
       options: [
         { value: 'all', display: 'Alle Schultypen' },
         { value: 'Gymnasien', display: 'Gymnasien' },
-        { value: 'Integrierte Sekundarschulen', display: 'Integrierte Sekundarschulen' }
+        { value: 'Integrierte Sekundarschule', display: 'Integrierte Sekundarschulen' }
       ]
     }
     return <div class={className}>
