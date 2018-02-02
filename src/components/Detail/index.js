@@ -1,6 +1,7 @@
 import { h, Component } from 'preact'
 import _ from './styles.sass'
 import RadioFilter from '@components/RadioFilter'
+import SchoolInfo from '@components/SchoolInfo'
 import colors from '@shared/styles/colors.sass'
 
 export default class Detail extends Component {
@@ -35,7 +36,7 @@ export default class Detail extends Component {
         { value: 'Integrierte Sekundarschulen', display: 'Integrierte Sekundarschulen' }
       ]
     }
-
+    console.log(selectedMarker);
     return <div class={className}>
       <div class={_.content} style={styles}>
         <div>
@@ -47,7 +48,7 @@ export default class Detail extends Component {
         </div>
 
         { hasMarker
-          ? 'content goes here' // i think the content here is going to be complex so it might could be its own component
+          ? <SchoolInfo properties={selectedMarkerProperties} />
           : <p class={_.helpText}>
             { isOnSmallScreen
               ? 'Klicken Sie auf einen Punkt, '
