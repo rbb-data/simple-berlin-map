@@ -19,7 +19,7 @@ class Main extends Component {
   }
 
   fetchData = async () => {
-    const res = await fetch(`./data/markers.geo.json`)
+    const res = await fetch(`./data/sekundarschulen_in_berlin.geojson`)
     const stationsCollection = await res.json()
     const markers = stationsCollection.features
 

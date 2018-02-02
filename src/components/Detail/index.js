@@ -6,7 +6,6 @@ import colors from '@shared/styles/colors.sass'
 
 export default class Detail extends Component {
   handleSelectSchoolType = ({ selectedValue }) => {
-    console.log(selectedValue)
     this.context.actions.setVisibleSchoolType(selectedValue)
   }
 
@@ -18,7 +17,7 @@ export default class Detail extends Component {
 
     const className = `${_.sidebar} ${props.class} ${hasMarker && _.hasMarker}`
     const styles = hasMarker &&
-      { borderColor: selectedMarker.properties.schultyp === 'Gymnasien'
+      { borderColor: selectedMarker.properties.type === 'Gymnasien'
         ? colors.sGym
         : colors.sInt
       }

@@ -36,7 +36,7 @@ export default class StationsLayer extends Component {
     const isSelected = marker === this.props.selectedMarker
     const radius = this.getCircleSize(this.state.mapZoom)
     const selectHandler = this.handleMarkerSelect(marker)
-    const isGymnasium = marker.properties.schultyp === 'Gymnasien'
+    const isGymnasium = marker.properties.type === 'Gymnasien'
 
     const markerProps = {
       key: marker.properties.station_id,

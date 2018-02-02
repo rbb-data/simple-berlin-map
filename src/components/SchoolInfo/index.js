@@ -8,43 +8,58 @@ export default class SchoolInfo extends Component {
 
   render (props) {
     const {
-      name,
-      schultyp,
-      straße,
-      plz,
-      ort,
-      öffentlich_privat,
-    anzahl_schüeler,
-    anzahl_schueler_jahr,
-    anteil_schülerinnen,
-    anteil_schüler,
-    anteil_geschlecht_jahr,
-    anteil_nicht_deutscher_herkunftsprache,
-    anteil_nicht_deutscher_herkunftsprache_jahr,
-    fehlzeiten_unentschuldigt_in_prozent,
-    vertretung_von_unterricht_in_prozent,
-    fehlzeiten_vertretung_jahr,
-    ausfall_von_unterricht_in_prozent,
-    ausfall_von_unterricht_in_prozent_jahr} = props.properties
+      type,
+      legal_status,
+      address,
+      statistics
+    } = props.properties
+
+    if (!statistics.Jahrgangsstufen) {
+
+    }
+
+    const {
+      'Nichtdeutsche Herkunftssprache': language,
+      'Jahrgangsstufen': pupils,
+      'Vertretungsunterricht': substitution,
+      'Fehlzeiten': misses
+    } = statistics
 
     return <div>
-      {schultyp} ({öffentlich_privat}), {straße}, {plz} {ort}<br />
-      {anzahl_schüeler} Schülerinnen und Schüler (20{anzahl_schueler_jahr})<br />
-      {/*<BalanceGauge*/}
-        {/*ratio={anteil_schülerinnen/100}*/}
-        {/*text={()=>`${anteil_schülerinnen}% weiblich (Schuljahr ${anteil_geschlecht_jahr})`} /><br />*/}
-      <BalanceGauge
-        ratio={anteil_nicht_deutscher_herkunftsprache/100}
-        text={()=>`${anteil_nicht_deutscher_herkunftsprache}% nicht deutscher Herkunftssprache (20${anteil_nicht_deutscher_herkunftsprache_jahr})`} /><br />
-      <BalanceGauge
-        ratio={fehlzeiten_unentschuldigt_in_prozent/100}
-        text={()=>`${fehlzeiten_unentschuldigt_in_prozent}% unentschuldigte Fehlzeiten (20${fehlzeiten_vertretung_jahr})`} /><br />
-      <BalanceGauge
-        ratio={vertretung_von_unterricht_in_prozent/100}
-        text={()=>`${vertretung_von_unterricht_in_prozent}% vertretener Unterricht (20${fehlzeiten_vertretung_jahr})`} /><br />
-      <BalanceGauge
-        ratio={ausfall_von_unterricht_in_prozent/100}
-        text={()=>`${ausfall_von_unterricht_in_prozent}% ausgefallener Unterricht (20${ausfall_von_unterricht_in_prozent_jahr})`} /><br />
+      {type} ({legal_status}), {address.street}, {address.postcode} {address.city}<br />
+      {
+        pupils &&
+        <div>
+          {pupils.values.Insgesamt} Schülerinnen und Schüler ({pupils.year})<br />
+        </div>
+      }
+      {
+        language &&
+        <div>
+          <BalanceGauge
+            ratio={language.values.Insgesamt / 100}
+            text={() => `${language.values.Insgesamt}% nicht-deutscher Herkunftssprache (${language.year})`}/> <br />
+        </div>
+      }
+      {
+        misses &&
+        <div>
+          <BalanceGauge
+            ratio={misses.values/100}
+            text={()=>`${misses.values}% unentschuldigte Fehlzeiten (${misses.year})`} /><br />
+        </div>
+      }
+      {
+        substitution &&
+        <div>
+          <BalanceGauge
+            ratio={substitution.values['Vertretung von Unterricht']/100}
+            text={()=>`${substitution.values['Vertretung von Unterricht']}% vertretener Unterricht (${substitution.year})`} /><br />
+          <BalanceGauge
+            ratio={substitution.values['Ausfall von Unterricht']/100}
+            text={()=>`${substitution.values['Ausfall von Unterricht']}% ausgefallener Unterricht (${substitution.year})`} /><br />
+        </div>
+      }
     </div>
   }
 }
