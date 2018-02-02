@@ -110,8 +110,8 @@ function fixBerlinSearchResult (feature) {
  */
 export function autocomplete ({ text, layers = 'street', sources = 'osm' }) {
   const params = {
-    key: API_KEY,
     q: text.indexOf('Berlin') === -1 ? text + ', Berlin' : text,
+    key: API_KEY,
     bounds: '13.0840301514,52.3351292878,13.7775421143,52.6784636529',
     countrycode: 'de',
     language: 'de',
