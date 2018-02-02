@@ -42,8 +42,6 @@ export default class AddressSearch extends Component {
     }
   }
 
-  inputVisible = () => (!this.props.isOnSmallScreen ? true : this.inputVisible())
-
   handleAutoCompleteResponse = (result) => {
     console.log(result)
     const features = result.features
