@@ -42,6 +42,8 @@ export default class AddressSearch extends Component {
     }
   }
 
+  inputVisible = () => (!this.props.isOnSmallScreen ? true : this.inputVisible())
+
   handleAutoCompleteResponse = (result) => {
     console.log(result)
     const features = result.features
@@ -174,8 +176,10 @@ export default class AddressSearch extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
+    console.log('entered', this.state.inputVisible)
 
-    if (this.state.inputVisible) {
+    if (this.state.inputVisible || !this.props.isOnSmallScreen) {
+      console.log('input visible')
       const {result, suggestions, highlightedSuggestion} = this.state
 
       // if the user submits twice suggestions will be undefined but the result
@@ -204,7 +208,8 @@ export default class AddressSearch extends Component {
             placeholder='Bitte Adresse eingeben'
             value={value}
             onInput={this.handleInput(layers)}
-            onBlur={this.handleBlur} />
+            onBlur={this.handleBlur}
+            autoComplete={'off'}/>
           <button class={style.searchButton} type={'reset'} style={visibility(result)}>
             <img src={closeIcon} />
           </button>
