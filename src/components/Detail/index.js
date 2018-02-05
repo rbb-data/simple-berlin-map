@@ -22,7 +22,6 @@ export default class Detail extends Component {
         { hasMarker
           ? <SchoolInfo properties={selectedMarkerProperties} />
           : <div>
-            <h2 class={_.title}>Weiterführende Schulen in Berlin</h2>
             <p class={_.helpText}>
               { isOnSmallScreen
                 ? 'Klicken Sie auf einen Punkt, '
