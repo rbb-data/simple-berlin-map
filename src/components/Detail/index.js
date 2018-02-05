@@ -37,13 +37,7 @@ export default class Detail extends Component {
     }
     return <div class={className}>
       <div class={_.content} style={styles}>
-        <div>
-          <div class={_.titleWrapper}>
-            <h2 class={_.title}>
-              { hasMarker ? name : 'Weiterführende Schulen in Berlin' }
-            </h2>
-          </div>
-        </div>
+        <h2 class={_.title}>{ hasMarker ? name : 'Weiterführende Schulen in Berlin' }</h2>
 
         { hasMarker
           ? <SchoolInfo properties={selectedMarkerProperties} />
