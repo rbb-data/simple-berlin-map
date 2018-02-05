@@ -15,12 +15,12 @@ import style from './BalanceGauge.styles.sass'
 
 const BalanceGauge = ({ class: className, ratio, text }) => {
   return <div class={`${style.balanceGauge} ${className}`}>
+    <span class={style.text}>{text(ratio)}</span>
     <div class={style.bar} aria-hidden='true'>
       <div class={style.leftBarPart} style={{ width: `${ratio * 100}%` }} />
       <div class={style.rightBarPart} style={{ width: `${(1 - ratio) * 100}%` }} />
       {/* <div class={style.caret} style={{ left: `${ratio * 100}%` }} /> */}
     </div>
-    <span class={style.text}>{text(ratio)}</span>
   </div>
 }
 

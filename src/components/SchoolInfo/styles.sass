@@ -1,2 +1,42 @@
 @import "~@shared/styles/colors.sass"
 @import "~@shared/styles/breakpoints.sass"
+
+.schooltype
+  color: $dark-grey
+  margin: 2px 0 4px
+  font-weight: 600
+  font-size: 16px
+
+  span
+    color: $grey
+
+.address
+  font-size: 13px
+  margin: 0
+  margin-bottom: 10px
+
+.metrics
+  column-count: 2
+  column-gap: 40px
+
+.metric
+  display: flex
+  align-items: flex-end
+  margin: 8px 0
+  font-weight: 600
+  font-size: 13px
+  // height: 40px
+
+  dt
+    flex: 1 1 auto
+    color: $dark-grey
+    display: inline
+
+  dd
+    // font-weight: bold
+    flex: 0 0 100px
+    display: inline
+    margin: 0
+
+    &::before
+      content: ' '

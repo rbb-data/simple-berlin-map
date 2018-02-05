@@ -2,16 +2,17 @@ $red: #e31818
 $grey: #D5D5D5
 
 .balanceGauge
-  display: inline-block
+  width: 100px
+  display: block
   position: relative
-  margin: .3em 0
+  margin: 0
 
   .bar
-    width: 80px
-    margin-right: 10px
+    width: 50px
+    margin-left: 10px
     height: 3px
     top: 50%
-    transform: translateY(-50%)
+    transform: translateY(-100%)
     display: inline-block
 
     .leftBarPart,
@@ -44,5 +45,4 @@ $grey: #D5D5D5
 
   .text
     display: inline-block
-    width: calc(100% - 90px)
-    vertical-align: middle
+    width: calc(100% - 60px)
