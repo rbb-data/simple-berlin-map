@@ -1,11 +1,32 @@
 @import "~@shared/styles/colors.sass"
 @import "~@shared/styles/breakpoints.sass"
 
+.schoolInfo
+  display: flex
+  flex-direction: column
+  height: 100%
+
+
+.title
+  font-size: 18px
+  margin: 0
+  margin-bottom: 0
+  margin-right: 5px
+  line-height: 1.2em
+  color: $red
+
+  @include breakpoint(small)
+    font-size: 16px
+    margin-bottom: 3px
+
 .schooltype
   color: $dark-grey
   margin: 2px 0 4px
   font-weight: 600
   font-size: 16px
+
+  @include breakpoint(small)
+    font-size: 14px
 
   span
     color: $grey
@@ -16,24 +37,30 @@
   margin-bottom: 10px
 
 .metrics
-  column-count: 2
+  column-width: 270px
   column-gap: 40px
+
+  @include breakpoint(small)
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    justify-content: center
 
 .metric
   display: flex
   align-items: flex-end
-  margin: 8px 0
+  margin: 0
+  margin-bottom: 8px
   font-weight: 600
   font-size: 13px
-  // height: 40px
 
   dt
     flex: 1 1 auto
     color: $dark-grey
     display: inline
+    margin-right: 5px
 
   dd
-    // font-weight: bold
     flex: 0 0 100px
     display: inline
     margin: 0

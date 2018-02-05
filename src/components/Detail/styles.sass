@@ -5,7 +5,6 @@
   display: flex
   flex-flow: column
   background-color: $background-grey
-  height: 210px
 
 .content
   padding: 10px 15px
@@ -30,7 +29,6 @@
 
   @include breakpoint(small)
     font-size: 16px
-    margin-bottom: 5px
 
 .helpText
   color: $dark-grey
@@ -38,7 +36,7 @@
   font-weight: bold
   line-height: 1.3em
   text-align: center
-  padding: 40px 10px
+  padding: 5px 10px
 
   p
     margin: 0 10px
@@ -46,10 +44,3 @@
 
   @include breakpoint(small)
     padding: 10px 30px
-
-.controlls
-  display: block
-  border-top: 2px solid white
-
-  @include breakpoint(small)
-    flex-direction: column

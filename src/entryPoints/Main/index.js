@@ -4,7 +4,7 @@ import { h, render, Component } from 'preact'
 import Hover from 'hover'
 import storeDescriptor from '@root/store.js'
 
-import MapWithDetail from '@components/MapWithDetail'
+import VisualisationContainer from '@components/VisualisationContainer'
 
 // ready, set, GO!
 class Main extends Component {
@@ -45,7 +45,7 @@ class Main extends Component {
   getChildContext () { return { actions: this.store } }
 
   render (props, state) {
-    return <MapWithDetail {...state} />
+    return <VisualisationContainer {...state} />
   }
 }
 

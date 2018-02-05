@@ -6,6 +6,7 @@ import _ from './styles.sass'
 export default class SchoolInfo extends Component {
   render (props) {
     const {
+      name,
       type,
       legal_status: legalStatus,
       address,
@@ -13,26 +14,29 @@ export default class SchoolInfo extends Component {
     } = props.properties
 
     const {
-      'Nichtdeutsche Herkunftssprache': language,
-      'Jahrgangsstufen': pupils,
-      'Vertretungsunterricht': substitution,
-      'Fehlzeiten': misses
+      // 'Nichtdeutsche Herkunftssprache': language,
+      // 'Jahrgangsstufen': pupils,
+      'Vertretungsunterricht': substitution
+      // 'Fehlzeiten': misses
     } = statistics
 
-    return <div>
-      <p class={_.schooltype}>
-        {type}
-        { legalStatus && <span> {legalStatus},</span> }
-      </p>
-      <p class={_.address}>
-        { address.street && `${address.street}, ${address.postcode} ${address.city}` }
-      </p>
+    return <div class={_.schoolInfo}>
+      <div>
+        <h2 class={_.title}>{name}</h2>
+        <p class={_.schooltype}>
+          {type}
+          { legalStatus && <span> {legalStatus},</span> }
+        </p>
+        <p class={_.address}>
+          { address.street && `${address.street}, ${address.postcode} ${address.city}` }
+        </p>
+      </div>
 
       <div class={_.metrics}>
-        <dl class={_.metric}>
+        {/* <dl class={_.metric}>
           <dt>Schülerinnen und Schüler:</dt>
           <dd>{pupils ? pupils.values.Insgesamt : 'n.a.'}</dd>
-        </dl>
+        </dl> */}
         <dl class={_.metric}>
           <dt>Vetretungsunterricht:</dt>
           <dd>
@@ -53,7 +57,7 @@ export default class SchoolInfo extends Component {
             }
           </dd>
         </dl>
-        <dl class={_.metric}>
+        {/* <dl class={_.metric}>
           <dt>Anteil der Schüler, die zu Hause nicht Deutsch sprechen:</dt>
           <dd>
             { language
@@ -62,8 +66,8 @@ export default class SchoolInfo extends Component {
               : 'n.a.'
             }
           </dd>
-        </dl>
-        <dl class={_.metric}>
+        </dl> */}
+        {/* <dl class={_.metric}>
           <dt>Unentschuldigte Fehlstunden (Quote):</dt>
           <dd>
             { misses
@@ -71,7 +75,7 @@ export default class SchoolInfo extends Component {
               : 'n.a.'
             }
           </dd>
-        </dl>
+        </dl> */}
       </div>
     </div>
   }
