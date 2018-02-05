@@ -24,15 +24,27 @@
     font-style: italic
     flex: auto 1 1
     text-align: center
-    color: $red
+    color: $dark-grey
 
     @include breakpoint(small)
       font-size: 12px
       border-right: 0
       border-bottom: 1px solid white
 
+    &:nth-child(2)
+      color: $s-gym
+
+      &.active
+        background-color: $s-gym
+
+    &:nth-child(3)
+      color: $s-int
+
+      &.active
+        background-color: $s-int
+
     &.active
-      background-color: $red
+      background-color: $dark-grey
       color: white
       border: 0
 
