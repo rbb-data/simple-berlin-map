@@ -5,7 +5,8 @@
   "description": "Infos abous belin schools",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "webpack --progress -p"
+    "build": "webpack --progress -p",
+    "wundf-deploy": "npm run build && rsync --archive --verbose --exclude-from '.deployignore' dst/ wundf@wunderundfitzig.de:nox"
   },
   "contributors": [
     "Manuel Reich <mr@wundf.net>",

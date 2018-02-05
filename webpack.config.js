@@ -19,7 +19,7 @@ const hmr = new webpack.HotModuleReplacementPlugin()
 // templates for generated html files
 //
 
-const createHTML = new HtmlWebpackPlugin({
+const createIndexHTML = new HtmlWebpackPlugin({
   inject: false,
   template: htmlTemplate,
   lang: 'de',
@@ -29,16 +29,23 @@ const createHTML = new HtmlWebpackPlugin({
   title: 'Weiterführende Schulen in Berlin'
 })
 
+const createIframeHTML = new HtmlWebpackPlugin({
+  inject: false,
+  template: 'src/entryPoints/IFrame/template.html',
+  filename: 'iframe.html'
+})
+
 module.exports = {
   entry: {
     index: [
       'babel-polyfill',
       'whatwg-fetch',
-      './src/entryPoints/Main/index.js'
-    ]
+      './src/entryPoints/index/index.js'
+    ],
+    iframe: ['./src/entryPoints/iframe/index.js']
   },
   output: {
-    filename: 'index.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dst')
   },
   module: {
@@ -93,7 +100,8 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
-    createHTML,
+    createIndexHTML,
+    createIframeHTML,
     extractStyles,
     copyData,
     hmr
@@ -114,6 +122,6 @@ module.exports = {
   devServer: {
     hot: true,
     open: true,
-    index: 'index.html'
+    index: 'iframe.html'
   }
 }
