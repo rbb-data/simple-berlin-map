@@ -101,10 +101,13 @@ export default class Map extends Component {
         <ZoomControl position='bottomright' />
 
         <Markers {...markersProps} />
-        <MapLocationMarker locationUpdate={searchResult} />
-        {/*  markerPane has zIndex: 600 and TooltipPane has zIndex: 650 */}
+        {/*  markerPane has zIndex: 600; selectedMarkerPane has: 640 and TooltipPane has: 650 */}
         <Pane name='linePane' style={{ zIndex: 620 }}>
           { selectedMarker && <LineFromLatLngToAbsolutePos {...lineProps} /> }
+        </Pane>
+        <Pane name='locationMarkerPane' style={{ zIndex: 640 }}>
+          {/* for some reason rendering this inside the pane is not enough we have to specify it */}
+          <MapLocationMarker locationUpdate={searchResult} pane='locationMarkerPane' />
         </Pane>
       </LeafletMap>
     </div>)

@@ -95,7 +95,7 @@ export default class StationsLayer extends Component {
     return <div ref={ref => { this.container = ref }}>
       { markers.filter(marker => !marker.isSelected).map(marker => marker.component)}
       {/*  linePane has zIndex: 620 and TooltipPane has zIndex: 650 */}
-      <Pane name='selectedMarkerPane' style={{ zIndex: 640 }}>{selectedMarker}</Pane>
+      <Pane name='selectedMarkerPane' style={{ zIndex: 630 }}>{selectedMarker}</Pane>
     </div>
   }
 }
