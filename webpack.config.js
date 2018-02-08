@@ -69,7 +69,7 @@ module.exports = {
                 sourceMap: true,
                 modules: true,
                 importLoaders: 2,
-                localIdentName: '[name]__[local]--[hash:base64:5]'
+                localIdentName: '[path]-[local]'
               }
             },
             { loader: 'resolve-url-loader', options: { sourceMap: true } },

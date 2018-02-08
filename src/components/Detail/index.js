@@ -10,28 +10,24 @@ export default class Detail extends Component {
     const hasMarker = selectedMarker !== null
     const selectedMarkerProperties = hasMarker ? selectedMarker.properties : {}
 
-    const className = `${_.sidebar} ${props.class} ${hasMarker && _.hasMarker}`
+    const className = `${_.detail} ${props.class} ${hasMarker && _.hasMarker}`
     const styles = hasMarker &&
       { borderColor: selectedMarker.properties.type === 'Gymnasien'
         ? colors.bordeaux
         : colors.blue
       }
 
-    return <div class={className}>
-      <div class={_.content} style={styles}>
-        { hasMarker
-          ? <SchoolInfo properties={selectedMarkerProperties} />
-          : <div>
-            <p class={_.helpText}>
-              { isOnSmallScreen
-                ? 'Klicken Sie auf einen Punkt, '
-                : 'Fahren Sie mit der Maus über einzelne Punkte, '
-              }
-              um Details zu den Schulen angezeigt zu bekommen.
-            </p>
-          </div>
-        }
-      </div>
+    return <div class={className} style={styles}>
+      { hasMarker
+        ? <SchoolInfo properties={selectedMarkerProperties} />
+        : <p class={_.helpText}>
+          { isOnSmallScreen
+            ? 'Klicken Sie auf einen Punkt, '
+            : 'Fahren Sie mit der Maus über einzelne Punkte, '
+          }
+          um Details zu den Schulen angezeigt zu bekommen.
+        </p>
+      }
     </div>
   }
 }
