@@ -51,7 +51,7 @@ export default class Map extends Component {
       animate: true,
       keyboard: false,
       minZoom: 9,
-      maxZoom: 14,
+      maxZoom: 16,
       zoomControl: false,
       zoomSnap: false,
       bounds: [

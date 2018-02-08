@@ -27,7 +27,8 @@ export default class StationsLayer extends Component {
 
   getCircleSize = (zoomLevel) => {
     const zoom = +zoomLevel
-    const radius = (zoom * zoom * zoom * zoom) / 3000
+    let radius = (zoom * zoom * zoom * zoom) / 3000
+    if (radius > 10) radius = 10
     return radius
   }
 
