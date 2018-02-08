@@ -13,8 +13,8 @@ export default class Detail extends Component {
     const className = `${_.sidebar} ${props.class} ${hasMarker && _.hasMarker}`
     const styles = hasMarker &&
       { borderColor: selectedMarker.properties.type === 'Gymnasien'
-        ? colors.sGym
-        : colors.sInt
+        ? colors.bordeaux
+        : colors.blue
       }
 
     return <div class={className}>

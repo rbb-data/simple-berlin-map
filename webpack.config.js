@@ -112,7 +112,7 @@ module.exports = {
       'react': 'preact-compat',
       'react-dom': 'preact-compat',
       '@components': path.resolve(__dirname, 'src/components'),
-      '@shared': path.resolve(__dirname, 'src/shared'),
+      '@shared': path.resolve(__dirname, 'src/rbb-data-shared'),
       '@root': path.resolve(__dirname, 'src'),
       '@data': path.resolve(__dirname, 'data')
     }

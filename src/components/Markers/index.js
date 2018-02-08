@@ -53,7 +53,7 @@ export default class StationsLayer extends Component {
       center: featureToLatLng(marker),
       fillOpacity: 1,
       radius: isSelected ? radius + 3 : radius,
-      fillColor: isGymnasium ? colors.sGym : colors.sInt,
+      fillColor: isGymnasium ? colors.bordeaux : colors.blue,
       stroke: isSelected || isTouchEnabled,
       weight: isSelected ? 1.5 : 20 - radius,
       color: isSelected ? 'white' : 'transparent',

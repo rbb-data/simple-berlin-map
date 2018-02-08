@@ -8,7 +8,7 @@ import Markers from '@components/Markers'
 import LineFromLatLngToAbsolutePos from
   '@components/LineFromLatLngToAbsolutePos/LineFromLatLngToAbsolutePos'
 import AddressSearch from '@components/AddressSearch/AddressSearch'
-import SearchResultMarker from '@components/SearchResultMarker/SearchResultMarker'
+import MapLocationMarker from '@shared/components/MapLocationMarker'
 import berlinMask from '@data/berlin.geo.json'
 import colors from '@shared/styles/colors.sass'
 import c from './styles.sass'
@@ -80,7 +80,7 @@ export default class Map extends Component {
     const lineProps = selectedMarker ? {
       latLng: { lat: selectedMarker.geometry.coordinates[1], lng: selectedMarker.geometry.coordinates[0] },
       position: { bottom: 0, left: 0.5, usePercentValues: true },
-      color: selectedMarker.properties.type === 'Gymnasien' ? colors.sGym : colors.sInt,
+      color: selectedMarker.properties.type === 'Gymnasien' ? colors.bordeaux : colors.blue,
       weight: 2
     } : {}
 
@@ -101,7 +101,7 @@ export default class Map extends Component {
         <ZoomControl position='bottomright' />
 
         <Markers {...markersProps} />
-        <SearchResultMarker searchResult={searchResult} />
+        <MapLocationMarker locationUpdate={searchResult} />
         {/*  markerPane has zIndex: 600 and TooltipPane has zIndex: 650 */}
         <Pane name='linePane' style={{ zIndex: 620 }}>
           { selectedMarker && <LineFromLatLngToAbsolutePos {...lineProps} /> }
