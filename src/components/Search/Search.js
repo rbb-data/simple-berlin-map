@@ -85,6 +85,7 @@ export default class Search extends Component {
 
     if (value.trim() !== '') {
       const request = () => {
+        // search a provider engine for points matching the input
         const params = { layers: layers.join(','), text: value }
         const providerRequest = new Promise((resolve, reject) => {
           autocomplete(params).then(result => {
@@ -104,11 +105,12 @@ export default class Search extends Component {
           })
         })
 
+        // search the given features if a geojson search is provided in the properties
         const geojsonRequest = (this.props.geojsonSearch
           ? new Promise((resolve, reject) => {
             const features = this.props.features
               .filter(this.props.geojsonSearch(value))
-              .slice(0, 5)
+              .slice(0, this.props.maxGeojsonResults || 3)
               .map(feature => {
                 feature.formatted = feature.properties.name
                 feature.location = {
@@ -119,6 +121,7 @@ export default class Search extends Component {
               })
             resolve({type: "FeatureCollection", features})
           })
+            // return empty features array if no search function
           : Promise.resolve({type: "FeatureCollection", features: []})
         )
 
@@ -126,6 +129,7 @@ export default class Search extends Component {
           .all([providerRequest, geojsonRequest])
           .then(([providerResult, geojsonResult]) => this.handleAutoCompleteResponse(providerResult, geojsonResult))
       }
+      // wait a delay before actual request to limit traffic
       this.scheduledRequest = setTimeout(request, this.debounceInMs)
     }
   }

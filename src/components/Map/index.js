@@ -25,15 +25,15 @@ export default class Map extends Component {
   }
 
   handleSearch = (result) => {
-    if (!result) {
+    if (!result) { // no search result
       this.context.actions.setSearchResult(undefined)
-    } else {
-      this.mapEl.setView(result.location, 13)
-      if (result.components) { // then it is not a geojson search result
+    } else { // any search result
+      this.mapEl.setView(result.location, 13) // zoom to hardcoded level
+      if (result.components) { // UGLY: condition for not a geojson search result
         this.context.actions.setSearchResult(result)
-      } else {
-        this.context.actions.setSearchResult(undefined)
-        this.context.actions.selectMarker({marker: result})
+      } else { // geojson search result
+        this.context.actions.setSearchResult(undefined) // do not show search marker
+        this.context.actions.selectMarker({marker: result}) // but select the feature marker
       }
     }
   }
@@ -81,9 +81,11 @@ export default class Map extends Component {
       isOnSmallScreen: isOnSmallScreen,
       placeholder: 'Schulname oder Adresse...',
       onSelect: result => this.handleSearch(result),
-      geojsonSearch: value => feature => (feature.properties.name.search(value) !== -1),
+      // following function returns true if a search input (value) matches a given map object (feature)
+      geojsonSearch: value => feature => (feature.properties.name.toLowerCase().search(value.toLowerCase()) !== -1),
       features: props.markers.filter(marker => props.visibleSchoolType === 'all' ||
-        props.visibleSchoolType === marker.properties.type)
+        props.visibleSchoolType === marker.properties.type),
+      maxGeojsonResults: 5
     }
 
     const maskProps = {
