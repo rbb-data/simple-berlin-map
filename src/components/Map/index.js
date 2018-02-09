@@ -29,7 +29,7 @@ export default class Map extends Component {
       this.context.actions.setSearchResult(undefined)
     } else { // any search result
       this.mapEl.setView(result.location, 13) // zoom to hardcoded level
-      if (result.components) { // UGLY: condition for not a geojson search result
+      if (result.components || result.timetamp) { // UGLY: condition for not a geojson search result
         this.context.actions.setSearchResult(result)
       } else { // geojson search result
         this.context.actions.setSearchResult(undefined) // do not show search marker
