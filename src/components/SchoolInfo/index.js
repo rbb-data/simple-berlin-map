@@ -10,7 +10,8 @@ export default class SchoolInfo extends Component {
       type,
       legal_status: legalStatus,
       address,
-      statistics
+      statistics,
+      entryURL
     } = props.properties
 
     const {
@@ -21,15 +22,21 @@ export default class SchoolInfo extends Component {
     } = statistics
 
     return <div class={_.schoolInfo}>
-      <div>
-        <h2 class={_.title}>{name}</h2>
-        <p class={_.schooltype}>
-          {type}
-          { legalStatus && <span> {legalStatus},</span> }
-        </p>
-        <p class={_.address}>
-          { address.street && `${address.street}, ${address.postcode} ${address.city}` }
-        </p>
+      <div class={_.titleWrapper}>
+        <div>
+          <h2 class={_.title}>{name}</h2>
+          <p class={_.schooltype}>
+            {type}
+            { legalStatus && <span> {legalStatus}</span> }
+          </p>
+          <p class={_.address}>
+            { address.street && `${address.street}, ${address.postcode} ${address.city}` }
+          </p>
+        </div>
+        <dl class={_.source}>
+          <dt>Quelle:</dt>
+          <dd><a href={entryURL}>berlin.de</a></dd>
+        </dl>
       </div>
 
       <div class={_.metrics}>
