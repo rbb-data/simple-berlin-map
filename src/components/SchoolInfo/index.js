@@ -19,7 +19,7 @@ export default class SchoolInfo extends Component {
 
     const metrics = [
       {
-        title: 'Vetretungsunterricht:',
+        title: 'Vertretungsunterricht:',
         percent: statistics.Vertretungsunterricht && statistics.Vertretungsunterricht.values['Vertretung von Unterricht']
       },
       {
@@ -27,11 +27,11 @@ export default class SchoolInfo extends Component {
         percent: statistics.Vertretungsunterricht && statistics.Vertretungsunterricht.values['Ausfall von Unterricht']
       },
       {
-        title: 'Anteil der Schüler, die zu Hause nicht Deutsch sprechen:',
+        title: 'Schüler, die zu Hause nicht Deutsch sprechen:',
         percent: statistics['Nichtdeutsche Herkunftssprache'] && statistics['Nichtdeutsche Herkunftssprache'].values.Insgesamt
       },
       {
-        title: 'Unentschuldigte Fehlstunden (Quote):',
+        title: 'Unentschuldigte Fehltage:',
         percent: statistics.Fehlzeiten && statistics.Fehlzeiten.values
       }
     ]
@@ -41,7 +41,7 @@ export default class SchoolInfo extends Component {
         <div>
           <h2 class={_.title}>{name}</h2>
           <p class={_.schooltype}>
-            {type}
+            {type === 'Gymnasien' ? 'Gymnasium' : type}
             { legalStatus && <span> {legalStatus}</span> }
           </p>
           <p class={_.address}>
@@ -50,13 +50,13 @@ export default class SchoolInfo extends Component {
         </div>
         <dl class={_.source}>
           <dt>Quelle:</dt>
-          <dd><a href={entryURL}>berlin.de</a></dd>
+          <dd><a href={entryURL} target='_blank'>berlin.de</a></dd>
         </dl>
       </div>
 
       <div class={_.metrics}>
         <dl class={_.metric}>
-          <dt>Schülerinnen und Schüler:</dt>
+          <dt>Schülerzahl:</dt>
           <dd>
             <span class={_.pupils}>
               {pupils ? pupils.values.Insgesamt : 'n.a.'}
@@ -64,7 +64,7 @@ export default class SchoolInfo extends Component {
           </dd>
         </dl>
         <dl class={_.metric}>
-          <dt>Verhältnis Schülerinnen&nbsp;/&nbsp;Schüler:</dt>
+          <dt>Schülerinnen / Schüler:</dt>
           <dd>
             { pupils
               ? <BalanceGauge ratio={pupils.values.Schülerinnen / 100}

@@ -19,8 +19,8 @@ export default class VisualisationContainer extends Component {
       className: _.schoolTypeFilter,
       options: [
         { value: 'all', display: 'Alle Schultypen' },
-        { value: 'Gymnasien', display: 'Gymnasien' },
-        { value: 'Integrierte Sekundarschule', display: 'Integrierte Sekundarschulen' }
+        { value: 'Gymnasien', display: 'Gymnasium' },
+        { value: 'Integrierte Sekundarschule', display: 'Integrierte Sekundarschule' }
       ]
     }
 

@@ -12,9 +12,6 @@
     vertical-align: middle
     background-color: $background-grey
 
-    @include breakpoint(small)
-      display: block
-
   li
     overflow: hidden
     border-right: 1px solid white
@@ -25,11 +22,10 @@
     flex: auto 1 1
     text-align: center
     color: $dark-grey
+    min-width: 100px
 
     @include breakpoint(small)
-      font-size: 12px
-      border-right: 0
-      border-bottom: 1px solid white
+      font-size: 11px
 
     &:nth-child(2)
       color: $bordeaux
@@ -80,7 +76,9 @@
     margin-left: 1px
 
   label
-    display: block
+    display: flex
+    justify-content: center
+    align-items: center
     padding: 8px 10px
-    vertical-align: middle
+    height: 100%
     cursor: pointer
