@@ -6,7 +6,7 @@ const iframeId = scriptTag.dataset.iframeId
 const iframe = document.querySelector(`#${iframeId}`)
 if (window.innerWidth <= breakpoints.small) {
   let newHeight = window.innerHeight
-  const minHeight = 550
+  const minHeight = 650
   if (newHeight < minHeight) newHeight = minHeight
   iframe.style.height = `${newHeight}px`
 }
