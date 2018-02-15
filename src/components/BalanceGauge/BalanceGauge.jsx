@@ -24,7 +24,7 @@ const BalanceGauge = ({ class: className, ratio, text, barColors }) => {
         style={{ width: `${ratio * 100}%`, background: barColors[0] }} />
       <div class={_.rightBarPart}
         style={{ width: `${(1 - ratio) * 100}%`, background: barColors[1] }} />
-      {/* <div class={style.caret} style={{ left: `${ratio * 100}%` }} /> */}
+      <div class={_.caret} style={{ left: `${ratio * 100}%` }} />
     </div>
   </div>
 }
