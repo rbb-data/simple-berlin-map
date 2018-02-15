@@ -13,12 +13,26 @@ export default class SchoolInfo extends Component {
       statistics
     } = props.properties
 
-    const {
-      // 'Nichtdeutsche Herkunftssprache': language,
-      // 'Jahrgangsstufen': pupils,
-      'Vertretungsunterricht': substitution
-      // 'Fehlzeiten': misses
-    } = statistics
+    const { 'Jahrgangsstufen': pupils } = statistics
+
+    const metrics = [
+      {
+        title: 'Vetretungsunterricht:',
+        percent: statistics.Vertretungsunterricht && statistics.Vertretungsunterricht.values['Vertretung von Unterricht']
+      },
+      {
+        title: 'Ausgefallener Unterricht:',
+        percent: statistics.Vertretungsunterricht && statistics.Vertretungsunterricht.values['Ausfall von Unterricht']
+      },
+      {
+        title: 'Anteil der Schüler, die zu Hause nicht Deutsch sprechen:',
+        percent: statistics['Nichtdeutsche Herkunftssprache'] && statistics['Nichtdeutsche Herkunftssprache'].values.Insgesamt
+      },
+      {
+        title: 'Unentschuldigte Fehlstunden (Quote):',
+        percent: statistics.Fehlzeiten && statistics.Fehlzeiten.values
+      }
+    ]
 
     return <div class={_.schoolInfo}>
       <div>
@@ -33,49 +47,26 @@ export default class SchoolInfo extends Component {
       </div>
 
       <div class={_.metrics}>
-        {/* <dl class={_.metric}>
+        <dl class={_.metric}>
           <dt>Schülerinnen und Schüler:</dt>
-          <dd>{pupils ? pupils.values.Insgesamt : 'n.a.'}</dd>
-        </dl> */}
-        <dl class={_.metric}>
-          <dt>Vetretungsunterricht:</dt>
           <dd>
-            { substitution
-              ? <BalanceGauge ratio={substitution.values['Vertretung von Unterricht'] / 100}
-                text={() => `${substitution.values['Vertretung von Unterricht']}%`} />
-              : 'n.a.'
-            }
+            <span class={_.valueOnly}>
+              {pupils ? pupils.values.Insgesamt : 'n.a.'}
+            </span>
           </dd>
         </dl>
-        <dl class={_.metric}>
-          <dt>Ausgefallener Unterricht:</dt>
-          <dd>
-            { substitution
-              ? <BalanceGauge ratio={substitution.values['Ausfall von Unterricht'] / 100}
-                text={() => `${substitution.values['Ausfall von Unterricht']}%`} />
-              : 'n.a.'
-            }
-          </dd>
-        </dl>
-        {/* <dl class={_.metric}>
-          <dt>Anteil der Schüler, die zu Hause nicht Deutsch sprechen:</dt>
-          <dd>
-            { language
-              ? <BalanceGauge ratio={language.values.Insgesamt / 100}
-                text={() => `${language.values.Insgesamt}%`} />
-              : 'n.a.'
-            }
-          </dd>
-        </dl> */}
-        {/* <dl class={_.metric}>
-          <dt>Unentschuldigte Fehlstunden (Quote):</dt>
-          <dd>
-            { misses
-              ? <BalanceGauge ratio={misses.values / 100} text={() => `${misses.values}%`} />
-              : 'n.a.'
-            }
-          </dd>
-        </dl> */}
+        { metrics.map(metric =>
+          <dl class={_.metric}>
+            <dt>{metric.title}</dt>
+            <dd>
+              { metric.percent
+                ? <BalanceGauge ratio={metric.percent / 100}
+                  text={() => `${metric.percent}%`} />
+                : <span class={_.valueOnly}>n.a.</span>
+              }
+            </dd>
+          </dl>
+        )}
       </div>
     </div>
   }
