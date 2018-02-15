@@ -29,11 +29,12 @@ export default class Map extends Component {
       this.context.actions.setSearchResult(undefined)
     } else { // any search result
       this.mapEl.setView(result.location, 13) // zoom to hardcoded level
-      if (result.components || result.timetamp) { // UGLY: condition for not a geojson search result
+      if (result.type === 'location') {
         this.context.actions.setSearchResult(result)
       } else { // geojson search result
         this.context.actions.setSearchResult(undefined) // do not show search marker
-        this.context.actions.selectMarker({marker: result}) // but select the feature marker
+        const marker = this.props.markers.find(m => m.properties.official_id === result.properties.official_id)
+        this.context.actions.selectMarker({marker: marker}) // but select the feature marker
       }
     }
   }
@@ -113,7 +114,7 @@ export default class Map extends Component {
     return (<div class={props.class}>
       <Search class={c.addressSearch} {...searchProps} />
 
-      <LeafletMap className={c.map} {...mapProps} ref={(mapEl) => this.mapEl = mapEl.leafletElement}>
+      <LeafletMap className={c.map} {...mapProps} ref={(mapEl) => { this.mapEl = mapEl.leafletElement }}>
         <BingLayer type='CanvasGray' bingkey={BING_KEY} />
         <GeoJSON data={berlinMask} {...maskProps} />
         <ZoomControl position='bottomright' />
@@ -125,7 +126,7 @@ export default class Map extends Component {
         </Pane>
         <Pane name='locationMarkerPane' style={{ zIndex: 640 }}>
           {/* for some reason rendering this inside the pane is not enough we have to specify it */}
-          <MapLocationMarker locationUpdate={searchResult} pane='locationMarkerPane' />
+          <MapLocationMarker location={searchResult && searchResult.location} pane='locationMarkerPane' />
         </Pane>
       </LeafletMap>
     </div>)

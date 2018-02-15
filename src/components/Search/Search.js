@@ -22,7 +22,7 @@ export default class Search extends Component {
     // called when result changes
     // if we have a GeoJSON Point that is selected as current location is provided
     // otherwise the result is is undefined
-    onSelect ({ timetamp, location: { lat, lng } }) {}
+    onSelect ({ timestamp, location: { lat, lng } }) {}
   }
 
   constructor ({ onSelect, isOnSmallScreen }) {
@@ -94,13 +94,14 @@ export default class Search extends Component {
                 _type === 'road' ||
                 _type === 'neighbourhood' ||
                 _type === 'building')
-              .map(entry => {
-                entry.location = {
+              .map(entry => ({
+                ...entry,
+                type: 'location',
+                location: {
                   lat: entry.geometry.lat,
                   lng: entry.geometry.lng
                 }
-                return entry
-              })
+              }))
             resolve(result)
           })
         })
@@ -111,18 +112,19 @@ export default class Search extends Component {
             const features = this.props.features
               .filter(this.props.geojsonSearch(value))
               .slice(0, this.props.maxGeojsonResults || 3)
-              .map(feature => {
-                feature.formatted = feature.properties.name
-                feature.location = {
+              .map(feature => ({
+                ...feature,
+                type: 'feature',
+                formatted: feature.properties.name,
+                location: {
                   lat: feature.geometry.coordinates[1],
                   lng: feature.geometry.coordinates[0]
                 }
-                return feature
-              })
-            resolve({type: "FeatureCollection", features})
+              }))
+            resolve({type: 'FeatureCollection', features})
           })
-            // return empty features array if no search function
-          : Promise.resolve({type: "FeatureCollection", features: []})
+          // return empty features array if no search function
+          : Promise.resolve({type: 'FeatureCollection', features: []})
         )
 
         Promise
@@ -239,7 +241,7 @@ export default class Search extends Component {
             value={value}
             onInput={this.handleInput(layers)}
             onBlur={this.handleBlur}
-            autoComplete={'off'}/>
+            autoComplete={'off'} />
           <button class={style.searchButton} type={'reset'} style={visibility(result)}>
             <img src={closeIcon} />
           </button>
