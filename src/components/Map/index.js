@@ -7,7 +7,7 @@ import { BingLayer } from 'react-leaflet-bing'
 import Markers from '@components/Markers'
 import LineFromLatLngToAbsolutePos from
   '@components/LineFromLatLngToAbsolutePos/LineFromLatLngToAbsolutePos'
-import AddressSearch from '@components/AddressSearch/AddressSearch'
+import Search from '@components/Search/Search'
 import MapLocationMarker from '@shared/components/MapLocationMarker'
 import berlinMask from '@data/berlin.geo.json'
 import colors from '@shared/styles/colors.sass'
@@ -24,7 +24,19 @@ export default class Map extends Component {
     }
   }
 
-  handleSearch = (result) => { this.context.actions.setSearchResult(result) }
+  handleSearch = (result) => {
+    if (!result) { // no search result
+      this.context.actions.setSearchResult(undefined)
+    } else { // any search result
+      this.mapEl.setView(result.location, 13) // zoom to hardcoded level
+      if (result.components || result.timetamp) { // UGLY: condition for not a geojson search result
+        this.context.actions.setSearchResult(result)
+      } else { // geojson search result
+        this.context.actions.setSearchResult(undefined) // do not show search marker
+        this.context.actions.selectMarker({marker: result}) // but select the feature marker
+      }
+    }
+  }
 
   render (props) {
     const {
@@ -67,7 +79,13 @@ export default class Map extends Component {
     const searchProps = {
       layers: ['address'],
       isOnSmallScreen: isOnSmallScreen,
-      onSelect: result => this.handleSearch(result)
+      placeholder: 'Schulname oder Adresse...',
+      onSelect: result => this.handleSearch(result),
+      // following function returns true if a search input (value) matches a given map object (feature)
+      geojsonSearch: value => feature => (feature.properties.name.toLowerCase().search(value.toLowerCase()) !== -1),
+      features: props.markers.filter(marker => props.visibleSchoolType === 'all' ||
+        props.visibleSchoolType === marker.properties.type),
+      maxGeojsonResults: 5
     }
 
     const maskProps = {
@@ -93,9 +111,9 @@ export default class Map extends Component {
     }
 
     return (<div class={props.class}>
-      <AddressSearch class={c.addressSearch} {...searchProps} />
+      <Search class={c.addressSearch} {...searchProps} />
 
-      <LeafletMap className={c.map} {...mapProps}>
+      <LeafletMap className={c.map} {...mapProps} ref={(mapEl) => this.mapEl = mapEl.leafletElement}>
         <BingLayer type='CanvasGray' bingkey={BING_KEY} />
         <GeoJSON data={berlinMask} {...maskProps} />
         <ZoomControl position='bottomright' />
