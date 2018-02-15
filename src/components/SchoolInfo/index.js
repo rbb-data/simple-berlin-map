@@ -1,6 +1,7 @@
 import { h, Component } from 'preact'
 
 import BalanceGauge from '@components/BalanceGauge/BalanceGauge.jsx'
+import colors from '@shared/styles/colors.sass'
 import _ from './styles.sass'
 
 export default class SchoolInfo extends Component {
@@ -60,6 +61,18 @@ export default class SchoolInfo extends Component {
             <span class={_.pupils}>
               {pupils ? pupils.values.Insgesamt : 'n.a.'}
             </span>
+          </dd>
+        </dl>
+        <dl class={_.metric}>
+          <dt>Verhältnis Schülerinnen&nbsp;/&nbsp;Schüler:</dt>
+          <dd>
+            { pupils
+              ? <BalanceGauge ratio={pupils.values.Schülerinnen / 100}
+                // barColors={['rgb(199, 68, 111)', 'rgb(98, 107, 202)']}
+                barColors={[colors.red, colors.darkGrey]}
+                text={() => `${pupils.values.Schülerinnen}% / ${pupils.values.Schüler}%`} />
+              : <span class={_.noValue}>n.a.</span>
+            }
           </dd>
         </dl>
         { metrics.map(metric =>
