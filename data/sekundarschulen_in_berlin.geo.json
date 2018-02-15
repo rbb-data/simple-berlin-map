@@ -287,7 +287,7 @@
         },
         "bezirk": "Mahlsdorf",
         "official_id": "10P12",
-        "name": "Freie Schule am Elsengrund (Integrierte Sekundarschule)",
+        "name": "Freie Schule am Elsengrund",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -429,7 +429,7 @@
         },
         "bezirk": "Dahlem",
         "official_id": "06K02",
-        "name": "Wilma-Rudolph-Schule (Integrierte Sekundarschule)",
+        "name": "Wilma-Rudolph-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -582,7 +582,7 @@
         },
         "bezirk": "Dahlem",
         "official_id": "06P06",
-        "name": "Königin-Luise-Stiftung (Gymnasium)",
+        "name": "Königin-Luise-Stiftung",
         "type": "Gymnasien",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -1059,7 +1059,7 @@
         },
         "bezirk": "Steglitz",
         "official_id": "06K03",
-        "name": "Kopernikus-Schule (Integrierte Sekundarschule)",
+        "name": "Kopernikus-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -1110,7 +1110,7 @@
         },
         "bezirk": "Lankwitz",
         "official_id": "06K04",
-        "name": "Bröndby-Schule (Integrierte Sekundarschule)",
+        "name": "Bröndby-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -1161,7 +1161,7 @@
         },
         "bezirk": "Steglitz",
         "official_id": "06P12",
-        "name": "Evangelische Schule Steglitz (Integrierte Sekundarschule)",
+        "name": "Evangelische Schule Steglitz",
         "type": "Integrierte Sekundarschule",
         "statistics": {},
         "legal_status": "privat",
@@ -1237,7 +1237,7 @@
         },
         "bezirk": "Tempelhof",
         "official_id": "07K07",
-        "name": "Johanna-Eck-Schule (Integrierte Sekundarschule)",
+        "name": "Johanna-Eck-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -1918,7 +1918,7 @@
         },
         "bezirk": "Neukölln",
         "official_id": "08P03",
-        "name": "Evangelische Schule Neukölln (Integrierte Sekundarschule)",
+        "name": "Evangelische Schule Neukölln",
         "type": "Integrierte Sekundarschule",
         "statistics": {},
         "legal_status": "privat",
@@ -2044,7 +2044,7 @@
         },
         "bezirk": "Johannisthal",
         "official_id": "09K06",
-        "name": "Hans-Grade-Schule (Integrierte Sekundarschule)",
+        "name": "Hans-Grade-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -2095,7 +2095,7 @@
         },
         "bezirk": "Bohnsdorf",
         "official_id": "09K03",
-        "name": "Fritz-Kühn-Schule (Integrierte Sekundarschule)",
+        "name": "Fritz-Kühn-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -2197,7 +2197,7 @@
         },
         "bezirk": "Mitte",
         "official_id": "01P16",
-        "name": "Berlin Metropolitan School (Integrierte Sekundarschule)",
+        "name": "Berlin Metropolitan School",
         "type": "Integrierte Sekundarschule",
         "statistics": {},
         "legal_status": "privat",
@@ -3103,7 +3103,7 @@
         },
         "bezirk": "Schöneberg",
         "official_id": "07P01",
-        "name": "Katholische Schule Sankt Franziskus (Integrierte Sekundarschule)",
+        "name": "Katholische Schule Sankt Franziskus",
         "type": "Integrierte Sekundarschule",
         "statistics": {},
         "legal_status": "privat",
@@ -3179,7 +3179,7 @@
         },
         "bezirk": "Kreuzberg",
         "official_id": "02K10",
-        "name": "Ferdinand-Freiligrath-Schule (Integrierte Sekundarschule)",
+        "name": "Ferdinand-Freiligrath-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -3536,7 +3536,7 @@
         },
         "bezirk": "Charlottenburg",
         "official_id": "04K06",
-        "name": "Schule am Schloss (Integrierte Sekundarschule)",
+        "name": "Schule am Schloss",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -3867,7 +3867,7 @@
         },
         "bezirk": "Mitte",
         "official_id": "01Y11",
-        "name": "Max-Planck-Schule (Gymnasium)",
+        "name": "Max-Planck-Schule",
         "type": "Gymnasien",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -4020,7 +4020,7 @@
         },
         "bezirk": "Staaken",
         "official_id": "05K09",
-        "name": "Schule am Staakener Kleeblatt (Integrierte Sekundarschule)",
+        "name": "Schule am Staakener Kleeblatt",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -4162,7 +4162,7 @@
         },
         "bezirk": "Neukölln",
         "official_id": "08P01",
-        "name": "Johann-Georg-Elser-Schule (Integrierte Sekundarschule)",
+        "name": "Johann-Georg-Elser-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {},
         "legal_status": "privat",
@@ -4238,7 +4238,7 @@
         },
         "bezirk": "Moabit",
         "official_id": "01K09",
-        "name": "Hedwig-Dohm-Schule (Integrierte Sekundarschule)",
+        "name": "Hedwig-Dohm-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -4391,7 +4391,7 @@
         },
         "bezirk": "Gesundbrunnen",
         "official_id": "01K06",
-        "name": "Herbert-Hoover-Schule (Integrierte Sekundarschule)",
+        "name": "Herbert-Hoover-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -4442,7 +4442,7 @@
         },
         "bezirk": "Wilhelmstadt",
         "official_id": "05K03",
-        "name": "Bertolt-Brecht-Oberschule (Integrierte Sekundarschule)",
+        "name": "Bertolt-Brecht-Oberschule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -5002,7 +5002,7 @@
         },
         "bezirk": "Wedding",
         "official_id": "01K08",
-        "name": "Schule am Schillerpark (Integrierte Sekundarschule)",
+        "name": "Schule am Schillerpark",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -5450,7 +5450,7 @@
         },
         "bezirk": "Friedrichshain",
         "official_id": "02K05",
-        "name": "Schule am Königstor (Integrierte Sekundarschule)",
+        "name": "Schule am Königstor",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -5501,7 +5501,7 @@
         },
         "bezirk": "Niederschönhausen",
         "official_id": "03K03",
-        "name": "Konrad-Duden-Schule (Integrierte Sekundarschule)",
+        "name": "Konrad-Duden-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -5654,7 +5654,7 @@
         },
         "bezirk": "Reinickendorf",
         "official_id": "12K03",
-        "name": "Max-Beckmann-Schule (Integrierte Sekundarschule)",
+        "name": "Max-Beckmann-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -5705,7 +5705,7 @@
         },
         "bezirk": "Reinickendorf",
         "official_id": "12K05",
-        "name": "Gustav-Freytag-Schule (Integrierte Sekundarschule)",
+        "name": "Gustav-Freytag-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -5756,7 +5756,7 @@
         },
         "bezirk": "Wittenau",
         "official_id": "12K06",
-        "name": "Benjamin-Franklin-Schule (Integrierte Sekundarschule)",
+        "name": "Benjamin-Franklin-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -5807,7 +5807,7 @@
         },
         "bezirk": "Friedrichshagen",
         "official_id": "09K05",
-        "name": "Wilhelm-Bölsche-Schule (Integrierte Sekundarschule)",
+        "name": "Wilhelm-Bölsche-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -6255,7 +6255,7 @@
         },
         "bezirk": "Köpenick",
         "official_id": "09K01",
-        "name": "Merian-Schule (Integrierte Sekundarschule)",
+        "name": "Merian-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -6663,7 +6663,7 @@
         },
         "bezirk": "Pankow",
         "official_id": "03K09",
-        "name": "Janusz-Korczak-Schule (Integrierte Sekundarschule)",
+        "name": "Janusz-Korczak-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -6856,7 +6856,7 @@
         },
         "bezirk": "Tiergarten",
         "official_id": "01P06",
-        "name": "Canisius-Kolleg (Gymnasium)",
+        "name": "Canisius-Kolleg",
         "type": "Gymnasien",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -6896,7 +6896,7 @@
         },
         "bezirk": "Oberschöneweide",
         "official_id": "09K04",
-        "name": "Isaac-Newton-Schule (Integrierte Sekundarschule)",
+        "name": "Isaac-Newton-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -6947,7 +6947,7 @@
         },
         "bezirk": "Charlottenburg",
         "official_id": "04P05",
-        "name": "Evangelische Schule Charlottenburg (Integrierte Sekundarschule)",
+        "name": "Evangelische Schule Charlottenburg",
         "type": "Integrierte Sekundarschule",
         "statistics": {},
         "legal_status": "privat",
@@ -7420,7 +7420,7 @@
         },
         "bezirk": "Pankow",
         "official_id": "03K02",
-        "name": "Kurt-Tucholsky-Schule (Integrierte Sekundarschule)",
+        "name": "Kurt-Tucholsky-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -7471,7 +7471,7 @@
         },
         "bezirk": "Weißensee",
         "official_id": "03P10",
-        "name": "Katholische Theresienschule (Gymnasium)",
+        "name": "Katholische Theresienschule",
         "type": "Gymnasien",
         "statistics": {},
         "legal_status": "privat",
@@ -7547,7 +7547,7 @@
         },
         "bezirk": "Falkenhagener Feld",
         "official_id": "05K01",
-        "name": "Martin-Buber-Oberschule (Integrierte Sekundarschule)",
+        "name": "Martin-Buber-Oberschule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -7598,7 +7598,7 @@
         },
         "bezirk": "Wilhelmstadt",
         "official_id": "05K02",
-        "name": "Carlo-Schmid-Oberschule (Integrierte Sekundarschule)",
+        "name": "Carlo-Schmid-Oberschule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -7649,7 +7649,7 @@
         },
         "bezirk": "Hakenfelde",
         "official_id": "05K04",
-        "name": "Heinrich-Böll-Oberschule (Integrierte Sekundarschule)",
+        "name": "Heinrich-Böll-Oberschule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -7700,7 +7700,7 @@
         },
         "bezirk": "Köpenick",
         "official_id": "09K08",
-        "name": "Schule an der Dahme (Integrierte Sekundarschule)",
+        "name": "Schule an der Dahme",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -8056,7 +8056,7 @@
         },
         "bezirk": "Köpenick",
         "official_id": "09P07",
-        "name": "Evangelische Schule Köpenick (Gymnasium)",
+        "name": "Evangelische Schule Köpenick",
         "type": "Gymnasien",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -8136,7 +8136,7 @@
         },
         "bezirk": "Wittenau",
         "official_id": "12K07",
-        "name": "Jean-Krämer-Schule (Integrierte Sekundarschule) Wittenau",
+        "name": "Jean-Krämer-Schule Wittenau",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -8409,7 +8409,7 @@
         },
         "bezirk": "Westend",
         "official_id": "04P04",
-        "name": "Katholische Schule Liebfrauen (Gymnasium)",
+        "name": "Katholische Schule Liebfrauen",
         "type": "Gymnasien",
         "statistics": {},
         "legal_status": "privat",
@@ -8587,7 +8587,7 @@
         },
         "bezirk": "Kreuzberg",
         "official_id": "02K08",
-        "name": "Refik-Veseli-Schule (Integrierte Sekundarschule)",
+        "name": "Refik-Veseli-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -8842,7 +8842,7 @@
         },
         "bezirk": "Alt-Hohenschönhausen",
         "official_id": "11K09",
-        "name": "Philipp-Reis-Schule (Integrierte Sekundarschule)",
+        "name": "Philipp-Reis-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -8893,7 +8893,7 @@
         },
         "bezirk": "Neu-Hohenschönhausen",
         "official_id": "11K07",
-        "name": "Vincent-van-Gogh-Schule (Integrierte Sekundarschule)",
+        "name": "Vincent-van-Gogh-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -9454,7 +9454,7 @@
         },
         "bezirk": "Wilmersdorf",
         "official_id": "03P13",
-        "name": "Freie Schule Pankow (Integrierte Sekundarschule)",
+        "name": "Freie Schule Pankow",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -9698,7 +9698,7 @@
         },
         "bezirk": "Pankow",
         "official_id": "03P24",
-        "name": "Ting-Schule (Integrierte Sekundarschule)",
+        "name": "Ting-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -10222,7 +10222,7 @@
         },
         "bezirk": "Hermsdorf",
         "official_id": "12K09",
-        "name": "Carl-Benz-Schule (Integrierte Sekundarschule)",
+        "name": "Carl-Benz-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -10502,7 +10502,7 @@
         },
         "bezirk": "Buch",
         "official_id": "03K10",
-        "name": "Hufeland-Schule (Integrierte Sekundarschule)",
+        "name": "Hufeland-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -10553,7 +10553,7 @@
         },
         "bezirk": "Kreuzberg",
         "official_id": "02K09",
-        "name": "Albrecht-von-Graefe-Schule (Integrierte Sekundarschule)",
+        "name": "Albrecht-von-Graefe-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -11321,7 +11321,7 @@
         },
         "bezirk": "Pankow",
         "official_id": "03P22",
-        "name": "Klax-Schule (Integrierte Sekundarschule)",
+        "name": "Klax-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -11769,7 +11769,7 @@
         },
         "bezirk": "Spandau",
         "official_id": "05K06",
-        "name": "Wolfgang-Borchert-Schule (Integrierte Sekundarschule)",
+        "name": "Wolfgang-Borchert-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -11820,7 +11820,7 @@
         },
         "bezirk": "Siemensstadt",
         "official_id": "05K07",
-        "name": "Schule an der Jungfernheide (Integrierte Sekundarschule)",
+        "name": "Schule an der Jungfernheide",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -11871,7 +11871,7 @@
         },
         "bezirk": "Wilhelmstadt",
         "official_id": "05K08",
-        "name": "Schule an der Haveldüne (Integrierte Sekundarschule)",
+        "name": "Schule an der Haveldüne",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -12314,7 +12314,7 @@
         },
         "bezirk": "Alt-Hohenschönhausen",
         "official_id": "11K11",
-        "name": "Paul-Schmidt-Schule (Integrierte Sekundarschule)",
+        "name": "Paul-Schmidt-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -12456,7 +12456,7 @@
         },
         "bezirk": "Steglitz",
         "official_id": "06K10",
-        "name": "Helene-Lange-Schule (Integrierte Sekundarschule)",
+        "name": "Helene-Lange-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -12547,7 +12547,7 @@
         },
         "bezirk": "Heiligensee",
         "official_id": "12P14",
-        "name": "Montessori-Schule Heiligensee (Integrierte Sekundarschule)",
+        "name": "Montessori-Schule Heiligensee",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -12619,7 +12619,7 @@
         },
         "bezirk": "Tempelhof",
         "official_id": "07K13",
-        "name": "Schule am Berlinickeplatz (Integrierte Sekundarschule)",
+        "name": "Schule am Berlinickeplatz",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -12844,7 +12844,7 @@
         },
         "bezirk": "Wilmersdorf",
         "official_id": "04K09",
-        "name": "Otto-von-Guericke-Schule (Integrierte Sekundarschule)",
+        "name": "Otto-von-Guericke-Schule",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -13041,7 +13041,7 @@
         },
         "bezirk": "Charlottenburg",
         "official_id": "04P38",
-        "name": "NEWSchool (Integrierte Sekundarschule)",
+        "name": "NEWSchool",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -13161,7 +13161,7 @@
         },
         "bezirk": "Weißensee",
         "official_id": "03P37",
-        "name": "Berlin Bilingual School (Integrierte Sekundarschule)",
+        "name": "Berlin Bilingual School",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -13193,7 +13193,7 @@
         },
         "bezirk": "Grunewald",
         "official_id": "04P40",
-        "name": "Berlin British School (Integrierte Sekundarschule)",
+        "name": "Berlin British School",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -13313,7 +13313,7 @@
         },
         "bezirk": "Dahlem",
         "official_id": "06P23",
-        "name": "Königin-Luise-Stiftung (Integrierte Sekundarschule)",
+        "name": "Königin-Luise-Stiftung",
         "type": "Integrierte Sekundarschule",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
@@ -13739,7 +13739,7 @@
         },
         "bezirk": "Gesundbrunnen",
         "official_id": "01Y09",
-        "name": "Diesterweg-Schule (Gymnasium)",
+        "name": "Diesterweg-Schule",
         "type": "Gymnasien",
         "statistics": {
           "Nichtdeutsche Herkunftssprache": {
