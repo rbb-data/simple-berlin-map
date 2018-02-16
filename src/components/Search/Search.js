@@ -63,7 +63,7 @@ export default class Search extends Component {
   }
 
   scheduledRequest = null
-  debounceInMs = 1000
+  debounceInMs = 500
 
   /**
    * Handler for changes in our <input type='text' />, responsible for sending
