@@ -165,7 +165,6 @@ export default class Search extends Component {
     // if we don't have any suggestions we don't need to change behavior
     if (suggestions === undefined) return
 
-    console.log(e, e.key)
     // if we don't use any keys for navigating we don't need to change behavior
     if (e.key !== 'ArrowDown' && e.key !== 'Down' &&
         e.key !== 'ArrowUp' && e.key !== 'Up') return
