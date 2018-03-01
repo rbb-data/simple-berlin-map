@@ -42,6 +42,12 @@
   column-gap: 40px
   flex: 1 1 auto
 
+  // IE11 cant handle column layout when setting the size for the detail container
+  // so just show each point in its own line
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+    column-width: auto
+    column-gap: auto
+
 .metric
   display: flex
   align-items: flex-end

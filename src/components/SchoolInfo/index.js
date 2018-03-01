@@ -54,16 +54,16 @@ export default class SchoolInfo extends Component {
         </dl>
       </div>
 
-      <div class={_.metrics}>
-        <dl class={_.metric}>
+      <dl class={_.metrics}>
+        <div class={_.metric}>
           <dt>Schülerzahl:</dt>
           <dd>
             <span class={_.pupils}>
               {pupils ? pupils.values.Insgesamt : 'n.a.'}
             </span>
           </dd>
-        </dl>
-        <dl class={_.metric}>
+        </div>
+        <div class={_.metric}>
           <dt>Schülerinnen / Schüler:</dt>
           <dd>
             { pupils
@@ -74,9 +74,9 @@ export default class SchoolInfo extends Component {
               : <span class={_.noValue}>n.a.</span>
             }
           </dd>
-        </dl>
+        </div>
         { metrics.map(metric =>
-          <dl class={_.metric}>
+          <div class={_.metric}>
             <dt>{metric.title}</dt>
             <dd>
               { metric.percent
@@ -85,9 +85,9 @@ export default class SchoolInfo extends Component {
                 : <span class={_.noValue}>n.a.</span>
               }
             </dd>
-          </dl>
+          </div>
         )}
-      </div>
+      </dl>
     </div>
   }
 }
