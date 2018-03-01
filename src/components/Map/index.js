@@ -124,10 +124,9 @@ export default class Map extends Component {
         <Pane name='linePane' style={{ zIndex: 620 }}>
           { selectedMarker && <LineFromLatLngToAbsolutePos {...lineProps} /> }
         </Pane>
-        <Pane name='locationMarkerPane' style={{ zIndex: 640 }}>
-          {/* for some reason rendering this inside the pane is not enough we have to specify it */}
-          <MapLocationMarker location={searchResult && searchResult.location} pane='locationMarkerPane' />
-        </Pane>
+        <Pane name='locationMarkerPane' style={{ zIndex: 640 }} />
+        {/* for some reason rendering this inside the pane is not enough we have to specify it */}
+        <MapLocationMarker location={searchResult && searchResult.location} pane='locationMarkerPane' />
       </LeafletMap>
     </div>)
   }
