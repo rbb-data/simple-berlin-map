@@ -165,12 +165,14 @@ export default class Search extends Component {
     // if we don't have any suggestions we don't need to change behavior
     if (suggestions === undefined) return
 
+    console.log(e, e.key)
     // if we don't use any keys for navigating we don't need to change behavior
-    if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return
+    if (e.key !== 'ArrowDown' && e.key !== 'Down' &&
+        e.key !== 'ArrowUp' && e.key !== 'Up') return
 
     // move highlighted suggestion one down and stay at bottom or move
     // highlighted suggestion one up and stay at top
-    const newHighlight = e.key === 'ArrowDown'
+    const newHighlight = (e.key === 'ArrowDown' || e.key === 'Down')
       ? highlightedSuggestion + 1
       : highlightedSuggestion - 1
 
