@@ -1,4 +1,4 @@
-# Weiterfuehrende Schulen Berlin
+# Simple Berlin Map
 
 ## Setup
 
@@ -8,20 +8,21 @@ This is a [node.js](https://nodejs.org/en/) project so you need node and [npm](h
 npm install
 ```
 
-## Develop
-
-### Run
+## Run
 ``` bash
 npm run dev   # runs in dev mode with hot reloading
               # at: `http://localhost:8080/`
 npm run build # builds app and stores it in '/dst'
 ```
 
-### Folder Structure
+## Folder Structure
 
 This app is composed out of *Components* that live in `src/components`. Every *Component* has its own folder containing the .js file, the *Components* styles and it's tests.
 
-Global styles and shared functions live in `src/shared`
+The `src/entryPoints` folder has a subfolder for each entry point specified in the `/webpack.config.js`.
+This is also a good point to start exploring the app.
+
+Global styles and shared functions live in the git submodule under `src/rbb-data-shared`
 
 There are some aliases setup in `/webpack.config.js` that make it easier to import *Components* or other files.
 
@@ -34,9 +35,25 @@ E.g. `@shared/styles/colors.sass` will always give you the sass file with the co
 
 **Note:** when importing inside .sass files you have to prepend your paths with `~` to use the webpack resolver. E.g: `@import "~@shared/styles/colors.sass"`
 
-### Styles (CSS Modules)
+## Libraries
 
-[CSS Modules](https://github.com/css-modules/css-modules) are used to encapsulate the styles of a *Component*.
+### [React Leaflet](https://github.com/PaulLeCam/react-leaflet)
+
+used to render the map.
+
+**Important:** You will not be able to use the standard marker icon without further configuration (you also shouldn't want to use it) as the image will not be found. Use a dummy image or the image provided for your project instead.
+
+### [Hover](https://github.com/jesseskinner/hover)
+
+for state management
+
+### [Webpack](https://webpack.js.org/)
+
+to bunde the js files
+
+## [CSS Modules](https://github.com/css-modules/css-modules)
+
+used to encapsulate the styles of a *Component*.
 
 The basic idea is that you can import your styles in your js file and get an object with all classNames of the file.
 
@@ -99,12 +116,6 @@ And the generated css like this:
   .ComponentName__text__8zas8 .ComponentName__colored__da7e8 {
     color: red; }
 ```
-
-## React Leaflet
-
-[React Leaflet](https://github.com/PaulLeCam/react-leaflet) is used to render the map.
-
-**Important:** You will not be able to use the standard marker icon without further configuration (you also shouldn't want to use it) as the image will not be found. Use a dummy image or the image provided for your project instead.
 
 ## Data conversion (OS X) with [Homebrew](https://brew.sh/)
 
