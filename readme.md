@@ -127,5 +127,5 @@ brew install jq
 
 ### Transform geocoded data in CSV to GeoJSON:
 ``` bash
-mlr --icsv --ifs comma --ojson cat data/data-with-latlng.csv | jq '.' --slurp | node data/to-geojson.js > data/stations.geo.json
+mlr --icsv --ifs comma --ojson cat data/markers.csv | jq '.' --slurp | node data/to-geojson.js > data/markers.geo.json
 ```

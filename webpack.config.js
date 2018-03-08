@@ -11,7 +11,7 @@ const extractStyles = new ExtractTextPlugin({
   disable: process.env.NODE_ENV === 'development'
 })
 const copyData = new CopyWebpackPlugin([
-  { from: './data/sekundarschulen_in_berlin.geo.json', to: './data' }
+  { from: './data/markers.geo.json', to: './data' }
 ])
 const hmr = new webpack.HotModuleReplacementPlugin()
 
