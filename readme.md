@@ -27,7 +27,7 @@ There are some aliases setup in `/webpack.config.js` that make it easier to impo
 
 - `@root` points to `/src`
 - `@components` points to `/src/components`
-- `@shared` points to `/src/shared`
+- `@shared` points to `/src/rbb-data-shared`
 - `@data` points to `/data`
 
 E.g. `@shared/styles/colors.sass` will always give you the sass file with the color variables independent of the location of your file.
