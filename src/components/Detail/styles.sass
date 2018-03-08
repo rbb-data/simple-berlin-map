@@ -13,20 +13,25 @@
 
   &.hasMarker
     justify-content: flex-start
+    border-color: $red
 
   @include breakpoint(small)
     padding: 8px 10px 10px
 
 .title
   font-size: 18px
-  margin: 0
+  margin: 5px 0
   margin-bottom: 0
   margin-right: 5px
   line-height: 1.2em
-  color: $red
 
   @include breakpoint(small)
     font-size: 16px
+
+.description
+  font-size: 13px
+  margin: 5px 0
+
 
 .helpText
   display: block

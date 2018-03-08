@@ -5,7 +5,7 @@ import L from 'leaflet'
 
 import { featureToLatLng } from '@shared/lib/geoJsonCompat'
 import colors from '@shared/styles/colors.sass'
-import c from './styles.sass'
+import _ from './styles.sass'
 
 export default class StationsLayer extends Component {
   constructor (props) {
@@ -37,11 +37,10 @@ export default class StationsLayer extends Component {
     const isSelected = marker === this.props.selectedMarker
     const radius = this.getCircleSize(this.state.mapZoom)
     const selectHandler = this.handleMarkerSelect(marker)
-    const isGymnasium = marker.properties.type === 'Gymnasien'
 
     const markerProps = {
       key: marker.properties.station_id,
-      className: c.circleMarker,
+      className: _.circleMarker,
       ref: ref => { this.markers[i] = ref },
       onClick: e => {
         if (!isTouchEnabled) return e.originalEvent.preventDefault()
@@ -54,7 +53,7 @@ export default class StationsLayer extends Component {
       center: featureToLatLng(marker),
       fillOpacity: 1,
       radius: isSelected ? radius + 3 : radius,
-      fillColor: isGymnasium ? colors.bordeaux : colors.blue,
+      fillColor: colors.red,
       stroke: isSelected || isTouchEnabled,
       weight: isSelected ? 1.5 : 20 - radius,
       color: isSelected ? 'white' : 'transparent',

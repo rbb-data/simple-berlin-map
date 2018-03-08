@@ -10,7 +10,7 @@ import Search from '@shared/components/Search'
 import MapLocationMarker from '@shared/components/MapLocationMarker'
 import berlinMask from '@data/berlin.geo.json'
 import colors from '@shared/styles/colors.sass'
-import c from './styles.sass'
+import _ from './styles.sass'
 
 // constants
 const BING_KEY = 'AsDTwD6TitCJVtFu4xIeYWq1UQKJq2KMUrj7GpQzRpgt7JDtgMWiI8Ovzw_qkz7F'
@@ -28,18 +28,13 @@ export default class Map extends Component {
       this.context.actions.setSearchResult(undefined)
     } else { // any search result
       this.mapEl.setView(result.location, 13) // zoom to hardcoded level
-      if (result.type === 'location') {
-        this.context.actions.setSearchResult(result)
-      } else { // geojson search result
-        this.context.actions.setSearchResult(undefined) // do not show search marker
-        const marker = this.props.markers.find(m => m.properties.official_id === result.properties.official_id)
-        this.context.actions.selectMarker({marker: marker}) // but select the feature marker
-      }
+      this.context.actions.setSearchResult(result)
     }
   }
 
   render (props) {
     const {
+      markers,
       selectedMarker,
       isTouchEnabled,
       isOnSmallScreen,
@@ -76,24 +71,10 @@ export default class Map extends Component {
       ]
     }
 
-    const visibleMarkers = props.markers.filter(marker =>
-      props.visibleSchoolType === 'all' || props.visibleSchoolType === marker.properties.type)
-
-    const searchBySchoolName = value =>
-      visibleMarkers.filter(school => {
-        const schoolName = school.properties.name.toLowerCase()
-        const schoolNameNameMatchesValue = schoolName.search(value.toLowerCase()) !== -1
-        return schoolNameNameMatchesValue
-      })
-
     const searchProps = {
       layers: ['address'],
       isOnSmallScreen: isOnSmallScreen,
-      placeholder: 'Schulname oder Adresse...',
-      onSelect: result => this.handleSearch(result),
-      // following function returns true if a search input (value) matches a given map object (feature)
-      geojsonSearch: searchBySchoolName,
-      maxGeojsonResults: 5
+      onSelect: result => this.handleSearch(result)
     }
 
     const maskProps = {
@@ -104,9 +85,12 @@ export default class Map extends Component {
     }
 
     const lineProps = selectedMarker ? {
-      latLng: { lat: selectedMarker.geometry.coordinates[1], lng: selectedMarker.geometry.coordinates[0] },
+      latLng: {
+        lat: selectedMarker.geometry.coordinates[1],
+        lng: selectedMarker.geometry.coordinates[0]
+      },
       position: { bottom: 0, left: 0.5, usePercentValues: true },
-      color: selectedMarker.properties.type === 'Gymnasien' ? colors.bordeaux : colors.blue,
+      color: colors.red,
       weight: 2
     } : {}
 
@@ -114,13 +98,13 @@ export default class Map extends Component {
       selectedMarker: selectedMarker,
       isTouchEnabled: isTouchEnabled,
       isOnSmallScreen: isOnSmallScreen,
-      markers: visibleMarkers
+      markers: markers
     }
 
     return (<div class={props.class}>
-      <Search class={c.addressSearch} {...searchProps} />
+      <Search class={_.addressSearch} {...searchProps} />
 
-      <LeafletMap className={c.map} {...mapProps} ref={(mapEl) => { this.mapEl = mapEl.leafletElement }}>
+      <LeafletMap className={_.map} {...mapProps} ref={(mapEl) => { this.mapEl = mapEl.leafletElement }}>
         <BingLayer type='CanvasGray' bingkey={BING_KEY} />
         <GeoJSON data={berlinMask} {...maskProps} />
         <ZoomControl position='bottomright' />
@@ -131,7 +115,7 @@ export default class Map extends Component {
           { selectedMarker && <MapLineFromLatLngToAbsolutePos {...lineProps} /> }
         </Pane>
         <Pane name='locationMarkerPane' style={{ zIndex: 640 }} />
-        {/* for some reason rendering this inside the pane is not enough we have to specify it */}
+        {/* for some reason rendering this inside the pane is working we have to specify it as a parameter */}
         <MapLocationMarker location={searchResult && searchResult.location} pane='locationMarkerPane' />
       </LeafletMap>
     </div>)
