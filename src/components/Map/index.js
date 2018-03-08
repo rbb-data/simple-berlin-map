@@ -5,9 +5,8 @@ import { Map as LeafletMap, ZoomControl, GeoJSON, Pane } from 'react-leaflet'
 import { BingLayer } from 'react-leaflet-bing'
 
 import Markers from '@components/Markers'
-import LineFromLatLngToAbsolutePos from
-  '@components/LineFromLatLngToAbsolutePos/LineFromLatLngToAbsolutePos'
-import Search from '@components/Search/Search'
+import MapLineFromLatLngToAbsolutePos from '@shared/components/MapLineFromLatLngToAbsolutePos'
+import Search from '@shared/components/Search'
 import MapLocationMarker from '@shared/components/MapLocationMarker'
 import berlinMask from '@data/berlin.geo.json'
 import colors from '@shared/styles/colors.sass'
@@ -77,15 +76,23 @@ export default class Map extends Component {
       ]
     }
 
+    const visibleMarkers = props.markers.filter(marker =>
+      props.visibleSchoolType === 'all' || props.visibleSchoolType === marker.properties.type)
+
+    const searchBySchoolName = value =>
+      visibleMarkers.filter(school => {
+        const schoolName = school.properties.name.toLowerCase()
+        const schoolNameNameMatchesValue = schoolName.search(value.toLowerCase()) !== -1
+        return schoolNameNameMatchesValue
+      })
+
     const searchProps = {
       layers: ['address'],
       isOnSmallScreen: isOnSmallScreen,
       placeholder: 'Schulname oder Adresse...',
       onSelect: result => this.handleSearch(result),
       // following function returns true if a search input (value) matches a given map object (feature)
-      geojsonSearch: value => feature => (feature.properties.name.toLowerCase().search(value.toLowerCase()) !== -1),
-      features: props.markers.filter(marker => props.visibleSchoolType === 'all' ||
-        props.visibleSchoolType === marker.properties.type),
+      geojsonSearch: searchBySchoolName,
       maxGeojsonResults: 5
     }
 
@@ -107,8 +114,7 @@ export default class Map extends Component {
       selectedMarker: selectedMarker,
       isTouchEnabled: isTouchEnabled,
       isOnSmallScreen: isOnSmallScreen,
-      markers: props.markers.filter(marker =>
-        props.visibleSchoolType === 'all' || props.visibleSchoolType === marker.properties.type)
+      markers: visibleMarkers
     }
 
     return (<div class={props.class}>
@@ -122,7 +128,7 @@ export default class Map extends Component {
         <Markers {...markersProps} />
         {/*  markerPane has zIndex: 600; selectedMarkerPane has: 640 and TooltipPane has: 650 */}
         <Pane name='linePane' style={{ zIndex: 620 }}>
-          { selectedMarker && <LineFromLatLngToAbsolutePos {...lineProps} /> }
+          { selectedMarker && <MapLineFromLatLngToAbsolutePos {...lineProps} /> }
         </Pane>
         <Pane name='locationMarkerPane' style={{ zIndex: 640 }} />
         {/* for some reason rendering this inside the pane is not enough we have to specify it */}

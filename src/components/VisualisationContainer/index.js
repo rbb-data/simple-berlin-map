@@ -2,7 +2,7 @@ import { h, Component } from 'preact'
 
 import Map from '@components/Map'
 import Detail from '@components/Detail'
-import RadioFilter from '@components/RadioFilter'
+import TabBar from '@shared/components/TabBar'
 import _ from './styles.sass'
 
 // ready, set, GO!
@@ -12,7 +12,7 @@ export default class VisualisationContainer extends Component {
   }
 
   render (props) {
-    const radioProps = {
+    const tabBarProps = {
       id: 'school-type-filter',
       title: 'nach Schultyp filtern',
       selectedValue: props.visibleSchoolType,
@@ -29,7 +29,7 @@ export default class VisualisationContainer extends Component {
         <Map class={_.map} {...props} />
         <Detail class={_.detail} {...props} />
       </div>
-      <RadioFilter {...radioProps} onChange={this.handleSelectSchoolType} />
+      <TabBar {...tabBarProps} onChange={this.handleSelectSchoolType} />
     </div>
   }
 }
