@@ -4,6 +4,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 0,
         "lat": 52.46947,
         "lng": 13.43961,
         "title": "Beispiel1",
@@ -20,6 +21,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 1,
         "lat": 52.43293,
         "lng": 13.34283,
         "title": "Beispiel2",
@@ -36,6 +38,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 2,
         "lat": 52.56636,
         "lng": 13.40072,
         "title": "Beispiel3",
@@ -52,6 +55,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 3,
         "lat": 52.53487,
         "lng": 13.61829,
         "title": "Beispiel4",
