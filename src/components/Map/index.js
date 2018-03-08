@@ -16,17 +16,11 @@ import _ from './styles.sass'
 const BING_KEY = 'AsDTwD6TitCJVtFu4xIeYWq1UQKJq2KMUrj7GpQzRpgt7JDtgMWiI8Ovzw_qkz7F'
 
 export default class Map extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      topRightPos: null
-    }
-  }
-
   handleSearch = (result) => {
-    if (!result) { // no search result
+    if (!result) {
+      // search result was cleared
       this.context.actions.setSearchResult(undefined)
-    } else { // any search result
+    } else {
       this.mapEl.setView(result.location, 13) // zoom to hardcoded level
       this.context.actions.setSearchResult(result)
     }
@@ -56,6 +50,8 @@ export default class Map extends Component {
 
     const mapProps = {
       animate: true,
+      // this is false because ios jumps towards elemts that can have focus when you touch
+      // them which makes the page jump
       keyboard: false,
       minZoom: 9,
       maxZoom: 16,

@@ -4,7 +4,6 @@ import _ from './styles.sass'
 export default class Detail extends Component {
   render (props) {
     const { selectedMarker, isOnSmallScreen } = props
-    // const isOnSmallScreen = props.isOnSmallScreen
     const hasMarker = selectedMarker !== null
     const selectedMarkerProperties = hasMarker ? selectedMarker.properties : {}
 

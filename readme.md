@@ -15,6 +15,23 @@ npm run dev   # runs in dev mode with hot reloading
 npm run build # builds app and stores it in '/dst'
 ```
 
+## Data
+
+You can provide data as `.geo.json` or you can convert to `.geo.json` from `.csv` with the script [described below.](#data-conversion)
+
+Each marker needs to have the following properties:
+
+- id
+- title
+- description
+
+When provinfing a csv you also need to specify:
+
+- lat
+- lng
+
+When you supply a `.geo.json` file you have to encode those as a [Point](http://geojson.org/geojson-spec.html#point)
+
 ## Folder Structure
 
 This app is composed out of *Components* that live in `src/components`. Every *Component* has its own folder containing the .js file, the *Components* styles and it's tests.
@@ -117,15 +134,18 @@ And the generated css like this:
     color: red; }
 ```
 
-## Data conversion (OS X) with [Homebrew](https://brew.sh/)
+## Data conversion
+### (OS X) with [Homebrew](https://brew.sh/)
 
-### Prerequisites
+The CSV needs to have the
+
+#### Prerequisites
 ``` bash
 brew install miller
 brew install jq
 ```
 
-### Transform geocoded data in CSV to GeoJSON:
+#### Transform geocoded data in CSV to GeoJSON:
 ``` bash
 mlr --icsv --ifs comma --ojson cat data/markers.csv | jq '.' --slurp | node data/to-geojson.js > data/markers.geo.json
 ```

@@ -7,11 +7,10 @@ import { featureToLatLng } from '@shared/lib/geoJsonCompat'
 import colors from '@shared/styles/colors.sass'
 import _ from './styles.sass'
 
-export default class StationsLayer extends Component {
+export default class Markers extends Component {
   constructor (props) {
     super(props)
-    this.markers = []
-    this.state = { mapMinEdge: null, mapZoom: null }
+    this.state = { mapZoom: null }
   }
 
   handleMarkerSelect = (marker) => (e) => {
@@ -39,9 +38,8 @@ export default class StationsLayer extends Component {
     const selectHandler = this.handleMarkerSelect(marker)
 
     const markerProps = {
-      key: marker.properties.station_id,
+      key: marker.properties.id,
       className: _.circleMarker,
-      ref: ref => { this.markers[i] = ref },
       onClick: e => {
         if (!isTouchEnabled) return e.originalEvent.preventDefault()
         selectHandler(e)
@@ -72,16 +70,6 @@ export default class StationsLayer extends Component {
     this.context.map.on('click', this.handleMarkerDeselect)
   }
 
-  componentDidUpdate () {
-    // react leaflet does not unbind tooltips when they are removed by react so
-    // we have to do it ourselfs
-
-    if (!this.props.isTouchEnabled && !this.props.isOnSmallScreen) return
-    this.markers.filter(m => m !== null).forEach(marker => {
-      marker.leafletElement.unbindTooltip()
-    })
-  }
-
   componentWillUnmount () {
     this.context.map.off('zoom', this.updateMapZoom)
     this.context.map.off('click', this.handleMarkerDeselect)
@@ -91,7 +79,7 @@ export default class StationsLayer extends Component {
     const markers = this.buildMarkers()
     const selectedMarker = (markers.find(marker => marker.isSelected) || {}).component
 
-    return <div ref={ref => { this.container = ref }}>
+    return <div>
       { markers.filter(marker => !marker.isSelected).map(marker => marker.component)}
       {/*  linePane has zIndex: 620 and TooltipPane has zIndex: 650 */}
       <Pane name='selectedMarkerPane' style={{ zIndex: 630 }}>{selectedMarker}</Pane>
