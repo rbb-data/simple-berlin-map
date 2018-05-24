@@ -2,6 +2,15 @@
 
 ## Setup
 
+This repository contains submodules; to fetch them run
+
+``` bash
+git clone --recursive --depth=1 $CLONE_URL
+# or if you already cloned the repository
+git submodule init
+git submodule update
+```
+
 This is a [node.js](https://nodejs.org/en/) project so you need node and [npm](https://www.npmjs.com/) installed. Then you can run:
 
 ``` bash
