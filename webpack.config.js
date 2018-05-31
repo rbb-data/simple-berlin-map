@@ -31,7 +31,7 @@ const createIndexHTML = new HtmlWebpackPlugin({
 
 const createIframeHTML = new HtmlWebpackPlugin({
   inject: false,
-  template: 'src/entryPoints/IFrame/template.html',
+  template: 'src/entryPoints/iframe/template.html',
   filename: 'iframe.html'
 })
 
