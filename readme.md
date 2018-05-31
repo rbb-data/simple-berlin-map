@@ -144,17 +144,22 @@ And the generated css like this:
 ```
 
 ## Data conversion
-### (OS X) with [Homebrew](https://brew.sh/)
 
-The CSV needs to have the
+### Option 1
 
-#### Prerequisites
+#### (OS X) with [Homebrew](https://brew.sh/)
+
+##### Prerequisites
 ``` bash
 brew install miller
 brew install jq
 ```
 
-#### Transform geocoded data in CSV to GeoJSON:
+##### Transform geocoded data in CSV to GeoJSON:
 ``` bash
 mlr --icsv --ifs comma --ojson cat data/markers.csv | jq '.' --slurp | node data/to-geojson.js > data/markers.geo.json
 ```
+
+### Option 2
+
+#### Use [geojson.io](http://geojson.io/) to open CSV and export/save to GeoJSON
