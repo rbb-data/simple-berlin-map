@@ -1,28 +1,42 @@
 import { h, Component } from 'preact'
+import Slider from '@shared/components/Slider'
 import _ from './styles.sass'
 
 export default class Detail extends Component {
+  getSlide = (feature) => {
+    if (!feature) return null
+
+    return <div class={_.content}>
+      <h2 class={_.title}>{feature.properties.title}</h2>
+      <p class={_.description}>{feature.properties.description}</p>
+    </div>
+  }
+
   render (props) {
-    const { selectedMarker, isOnSmallScreen } = props
-    const hasMarker = selectedMarker !== null
-    const selectedMarkerProperties = hasMarker ? selectedMarker.properties : {}
+    const { markers, selectedMarkerIndex, isTouchEnabled } = props
+    const selectedMarker = markers[selectedMarkerIndex]
+    const hasMarker = selectedMarker !== undefined
 
     const className = `${_.detail} ${props.class} ${hasMarker && _.hasMarker}`
 
+    if (!hasMarker) return <div class={className}><p class={_.loadingText}>lädt…</p></div>
+
+    const silderProps = {
+      onForwardNavigation: () => {
+        this.context.actions.selectMarker({ byIndex: selectedMarkerIndex + 1 })
+      },
+      onBackwardNavigation: () => {
+        this.context.actions.selectMarker({ byIndex: selectedMarkerIndex - 1 })
+      },
+      previousSlide: this.getSlide(markers[selectedMarkerIndex - 1]),
+      currentSlide: this.getSlide(markers[selectedMarkerIndex]),
+      nextSlide: this.getSlide(markers[selectedMarkerIndex + 1]),
+      canHaveFocus: !isTouchEnabled
+    }
+
     return <div class={className}>
-      { hasMarker
-        ? <div>
-          <h2 class={_.title}>{selectedMarkerProperties.title}</h2>
-          <p class={_.description}>{selectedMarkerProperties.description}</p>
-        </div>
-        : <p class={_.helpText}>
-          { isOnSmallScreen
-            ? 'Klicken Sie auf einen Punkt, '
-            : 'Fahren Sie mit der Maus über einzelne Punkte, '
-          }
-          um mehr Informationen angezeigt zu bekommen.
-        </p>
-      }
+      <Slider {...silderProps} />
+
     </div>
   }
 }

@@ -29,11 +29,13 @@ export default class Map extends Component {
   render (props) {
     const {
       markers,
-      selectedMarker,
+      selectedMarkerIndex,
       isTouchEnabled,
       isOnSmallScreen,
       searchResult
     } = props
+
+    const selectedMarker = markers[selectedMarkerIndex] || null
 
     // props used for initial map rendering
     const berlin = {
@@ -56,6 +58,7 @@ export default class Map extends Component {
       minZoom: 9,
       maxZoom: 16,
       zoomControl: false,
+      scrollWheelZoom: false,
       zoomSnap: false,
       bounds: [
         [berlin.bounds.bottomright.lat, berlin.bounds.bottomright.lng],
@@ -85,13 +88,13 @@ export default class Map extends Component {
         lat: selectedMarker.geometry.coordinates[1],
         lng: selectedMarker.geometry.coordinates[0]
       },
-      position: { bottom: 0, left: 0.5, usePercentValues: true },
-      color: colors.red,
+      position: { top: 0, left: 0.7, usePercentValues: true },
+      color: colors.darkGrey,
       weight: 2
     } : {}
 
     const markersProps = {
-      selectedMarker: selectedMarker,
+      selectedMarkerIndex: selectedMarkerIndex,
       isTouchEnabled: isTouchEnabled,
       isOnSmallScreen: isOnSmallScreen,
       markers: markers
@@ -101,7 +104,7 @@ export default class Map extends Component {
       <Search class={_.addressSearch} {...searchProps} />
 
       <LeafletMap className={_.map} {...mapProps} ref={(mapEl) => { this.mapEl = mapEl.leafletElement }}>
-        <BingLayer type='CanvasGray' bingkey={BING_KEY} />
+        <BingLayer type='CanvasGray' bingkey={BING_KEY} culture='de-de' style='trs|lv:false_pt|lv:false_rd|fc:cccccc_hg|fc:bbbbbb' />
         <GeoJSON data={berlinMask} {...maskProps} />
         <ZoomControl position='bottomright' />
 

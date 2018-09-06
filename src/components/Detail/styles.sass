@@ -2,51 +2,37 @@
 @import "~@shared/styles/breakpoints.sass"
 
 .detail
-  display: flex
-  flex-flow: column
-  justify-content: center
   background-color: $background-grey
-  position: relative
-  padding: 10px 15px
-  border: 2px solid $dark-grey
-  font-size: 14px
+  border-bottom: 3px solid $dark-grey
 
-  &.hasMarker
-    justify-content: flex-start
-    border-color: $red
+.content
+  font-size: 14px
+  padding: 20px 0
 
   @include breakpoint(small)
     padding: 8px 10px 10px
 
 .title
   font-size: 18px
-  margin: 5px 0
-  margin-bottom: 0
+  margin: 5px 0 10px
   margin-right: 5px
   line-height: 1.2em
+  text-transform: uppercase
+  color: $dark-grey
 
   @include breakpoint(small)
     font-size: 16px
 
 .description
-  font-size: 13px
+  font-size: 14px
   margin: 5px 0
 
 
-.helpText
+.loadingText
   display: block
   color: $dark-grey
   font-size: 14px
-  font-weight: bold
   line-height: 1.3em
   text-align: center
   padding: 0 10px
   margin: 0
-
-  p
-    margin: 0 10px
-    width: 50%
-
-  @include breakpoint(small)
-    padding: 10px 30px
-

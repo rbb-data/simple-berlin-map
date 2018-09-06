@@ -8,8 +8,8 @@ import _ from './styles.sass'
 export default class VisualisationContainer extends Component {
   render (props) {
     return <div class={_.app}>
-      <Map class={_.map} {...props} />
       <Detail class={_.detail} {...props} />
+      <Map class={_.map} {...props} />
     </div>
   }
 }

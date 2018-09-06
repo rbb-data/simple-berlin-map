@@ -2,7 +2,7 @@ import breakpoints from '@shared/styles/breakpoints.sass'
 
 export const initialState = {
   markers: [],
-  selectedMarker: null,
+  selectedMarkerIndex: 0,
   searchResult: null,
   isOnSmallScreen: true,
   isTouchEnabled: false,
@@ -12,20 +12,9 @@ export const initialState = {
 export const actions = {
   setMarkers: (state, { markers }) => ({ ...state, markers }),
 
-  selectMarker: (state, { marker }) => ({ ...state, selectedMarker: marker }),
+  selectMarker: (state, { byIndex: index }) => ({ ...state, selectedMarkerIndex: index }),
 
   setSearchResult: (state, searchResult) => ({ ...state, searchResult }),
-
-  setVisibleSchoolType: (state, visibleSchoolType) => {
-    const isSelectedMarkerStillVisible = visibleSchoolType === 'all' ||
-      visibleSchoolType === (state.selectedMarker || { properties: {} }).properties.type
-
-    return {
-      ...state,
-      selectedMarker: isSelectedMarkerStillVisible ? state.selectedMarker : null,
-      visibleSchoolType
-    }
-  },
 
   updateScreenType: (state, { screenWidth }) => ({
     ...state,

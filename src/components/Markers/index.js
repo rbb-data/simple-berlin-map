@@ -1,11 +1,10 @@
 import { h, Component } from 'preact'
 
-import { CircleMarker, Pane } from 'react-leaflet'
+import { Pane } from 'react-leaflet'
 import L from 'leaflet'
 
 import { featureToLatLng } from '@shared/lib/geoJsonCompat'
-import colors from '@shared/styles/colors.sass'
-import _ from './styles.sass'
+import SelectableMarker from '@shared/components/MapSelectableMarker'
 
 export default class Markers extends Component {
   constructor (props) {
@@ -13,8 +12,8 @@ export default class Markers extends Component {
     this.state = { mapZoom: null }
   }
 
-  handleMarkerSelect = (marker) => (e) => {
-    this.context.actions.selectMarker({ marker })
+  handleMarkerSelect = (index) => (e) => {
+    this.context.actions.selectMarker({ byIndex: index })
     L.DomEvent.stopPropagation(e)
   }
 
@@ -24,22 +23,14 @@ export default class Markers extends Component {
 
   updateMapZoom = () => { this.setState({ mapZoom: this.context.map.getZoom() }) }
 
-  getCircleSize = (zoomLevel) => {
-    const zoom = +zoomLevel
-    let radius = (zoom * zoom * zoom * zoom) / 3000
-    if (radius > 10) radius = 10
-    return radius
-  }
-
   buildMarkers = () => this.props.markers.map((marker, i) => {
-    const { isTouchEnabled } = this.props
-    const isSelected = marker === this.props.selectedMarker
-    const radius = this.getCircleSize(this.state.mapZoom)
-    const selectHandler = this.handleMarkerSelect(marker)
+    const { isTouchEnabled, selectedMarkerIndex } = this.props
+    const isSelected = i === selectedMarkerIndex
+    const selectHandler = this.handleMarkerSelect(i)
 
     const markerProps = {
       key: marker.properties.id,
-      className: _.circleMarker,
+      isSelected: isSelected,
       onClick: e => {
         if (!isTouchEnabled) return e.originalEvent.preventDefault()
         selectHandler(e)
@@ -48,19 +39,14 @@ export default class Markers extends Component {
         if (isTouchEnabled) return e.originalEvent.preventDefault()
         selectHandler(e)
       },
-      center: featureToLatLng(marker),
-      fillOpacity: 1,
-      radius: isSelected ? radius + 3 : radius,
-      fillColor: colors.red,
-      stroke: isSelected || isTouchEnabled,
-      weight: isSelected ? 1.5 : 20 - radius,
-      color: isSelected ? 'white' : 'transparent',
-      pane: !isSelected && 'markerPane'
+      position: featureToLatLng(marker),
+      pane: isSelected ? 'selectedMarkerPane' : 'markerPane',
+      optimizeForTouch: isTouchEnabled
     }
 
     return {
       isSelected,
-      component: <CircleMarker {...markerProps} />
+      component: <SelectableMarker {...markerProps} />
     }
   })
 
