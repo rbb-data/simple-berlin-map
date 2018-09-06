@@ -22,7 +22,7 @@ export default class Map extends Component {
       // search result was cleared
       this.context.actions.setSearchResult(undefined)
     } else {
-      this.mapEl.setView(result.location, 13) // zoom to hardcoded level
+      this.map.setView(result.location, 13) // zoom to hardcoded level
       this.context.actions.setSearchResult(result)
     }
   }
@@ -151,7 +151,7 @@ export default class Map extends Component {
         </Pane>
         <Pane name='locationMarkerPane' style={{ zIndex: 640 }} />
         {/* for some reason rendering this inside the pane is working we have to specify it as a parameter */}
-        <MapLocationMarker location={searchResult && searchResult.location} pane='locationMarkerPane' />
+        <MapLocationMarker position={searchResult && searchResult.location} pane='locationMarkerPane' />
       </LeafletMap>
     </div>)
   }
