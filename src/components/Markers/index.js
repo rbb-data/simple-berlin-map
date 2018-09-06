@@ -32,13 +32,13 @@ export default class Markers extends Component {
       key: marker.properties.id,
       isSelected: isSelected,
       onClick: e => {
-        if (!isTouchEnabled) return e.originalEvent.preventDefault()
+        // if (!isTouchEnabled) return e.originalEvent.preventDefault()
         selectHandler(e)
       },
-      onMouseover: e => {
-        if (isTouchEnabled) return e.originalEvent.preventDefault()
-        selectHandler(e)
-      },
+      // onMouseover: e => {
+      //   if (isTouchEnabled) return e.originalEvent.preventDefault()
+      //   selectHandler(e)
+      // },
       position: featureToLatLng(marker),
       pane: isSelected ? 'selectedMarkerPane' : 'markerPane',
       optimizeForTouch: isTouchEnabled

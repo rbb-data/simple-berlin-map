@@ -8,6 +8,7 @@ import Markers from '@components/Markers'
 import MapLineFromLatLngToAbsolutePos from '@shared/components/MapLineFromLatLngToAbsolutePos'
 import Search from '@shared/components/Search'
 import MapLocationMarker from '@shared/components/MapLocationMarker'
+import { featureToLatLng } from '@shared/lib/geoJsonCompat'
 import berlinMask from '@data/berlin.geo.json'
 import colors from '@shared/styles/colors.sass'
 import _ from './styles.sass'
@@ -24,6 +25,41 @@ export default class Map extends Component {
       this.mapEl.setView(result.location, 13) // zoom to hardcoded level
       this.context.actions.setSearchResult(result)
     }
+  }
+
+  checkSize = () => {
+    const width = this.map._container.clientWidth
+    const height = this.map._container.clientHeight
+
+    if (this.prevWidth !== width || this.prevHeight !== height) {
+      this.prevWidth = width
+      this.prevHeight = height
+      this.map.invalidateSize(false)
+    }
+  }
+
+  flyToSelectedMarker = () => {
+    if (!this.map) return
+
+    const marker = this.props.markers[this.props.selectedMarkerIndex]
+
+    this.map.panTo(featureToLatLng(marker), {
+      animate: true
+    })
+  }
+
+  componentDidMount () {
+    this.intervalId = setInterval(this.checkSize, 50)
+  }
+
+  componentDidUpdate (prevProps) {
+    if (this.props.selectedMarkerIndex === prevProps.selectedMarkerIndex &&
+        this.props.markers === prevProps.markers) return
+    this.flyToSelectedMarker()
+  }
+
+  componentDidUnMount () {
+    clearInterval(this.intervalId)
   }
 
   render (props) {
@@ -103,8 +139,8 @@ export default class Map extends Component {
     return (<div class={props.class}>
       <Search class={_.addressSearch} {...searchProps} />
 
-      <LeafletMap className={_.map} {...mapProps} ref={(mapEl) => { this.mapEl = mapEl.leafletElement }}>
-        <BingLayer type='CanvasGray' bingkey={BING_KEY} culture='de-de' style='trs|lv:false_pt|lv:false_rd|fc:cccccc_hg|fc:bbbbbb' />
+      <LeafletMap className={_.map} {...mapProps} ref={(map) => { this.map = map.leafletElement }}>
+        <BingLayer type='CanvasGray' bingkey={BING_KEY} culture='de-de' style='trs|lv:false_pt|lv:false_rd|fc:dddddd_hg|fc:bbbbbb' />
         <GeoJSON data={berlinMask} {...maskProps} />
         <ZoomControl position='bottomright' />
 
