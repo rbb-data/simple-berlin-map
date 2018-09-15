@@ -1,5 +1,7 @@
 # Simple Berlin Map
 
+![](./example.png)
+
 ## Setup
 
 This repository contains submodules; to fetch them run

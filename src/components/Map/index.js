@@ -5,7 +5,7 @@ import { Map as LeafletMap, ZoomControl, GeoJSON, Pane } from 'react-leaflet'
 import { BingLayer } from 'react-leaflet-bing'
 
 import Markers from '@components/Markers'
-import MapLineFromLatLngToAbsolutePos from '@shared/components/MapLineFromLatLngToAbsolutePos'
+import MapPolygonWithAbsolutePoints from '@shared/components/MapPolygonWithAbsolutePoints'
 import Search from '@shared/components/Search'
 import MapLocationMarker from '@shared/components/MapLocationMarker'
 import { featureToLatLng } from '@shared/lib/geoJsonCompat'
@@ -119,14 +119,19 @@ export default class Map extends Component {
       stroke: false
     }
 
-    const lineProps = selectedMarker ? {
-      latLng: {
+    const polygonProps = selectedMarker ? {
+      positionsOnMap: [{
         lat: selectedMarker.geometry.coordinates[1],
         lng: selectedMarker.geometry.coordinates[0]
-      },
-      position: { top: 0, left: 0.7, usePercentValues: true },
+      }],
+      pointCalculationFunctions: [
+        ({ width, height }) => ({ x: width * 0.8, y: -2 }),
+        ({ width, height }) => ({ x: width * 0.8 + 10, y: -2 })
+      ],
+      fillOpacity: 1,
+      fillColor: colors.darkGrey,
       color: colors.darkGrey,
-      weight: 2
+      weight: 1
     } : {}
 
     const markersProps = {
@@ -147,7 +152,7 @@ export default class Map extends Component {
         <Markers {...markersProps} />
         {/*  markerPane has zIndex: 600; selectedMarkerPane has: 640 and TooltipPane has: 650 */}
         <Pane name='linePane' style={{ zIndex: 620 }}>
-          { selectedMarker && <MapLineFromLatLngToAbsolutePos {...lineProps} /> }
+          { selectedMarker && <MapPolygonWithAbsolutePoints {...polygonProps} /> }
         </Pane>
         <Pane name='locationMarkerPane' style={{ zIndex: 640 }} />
         {/* for some reason rendering this inside the pane is working we have to specify it as a parameter */}

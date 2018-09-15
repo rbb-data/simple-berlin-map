@@ -17,10 +17,6 @@ export default class Markers extends Component {
     L.DomEvent.stopPropagation(e)
   }
 
-  handleMarkerDeselect = () => {
-    this.context.actions.selectMarker({ marker: null })
-  }
-
   updateMapZoom = () => { this.setState({ mapZoom: this.context.map.getZoom() }) }
 
   buildMarkers = () => this.props.markers.map((marker, i) => {
@@ -53,12 +49,10 @@ export default class Markers extends Component {
   componentDidMount () {
     this.updateMapZoom()
     this.context.map.on('zoom', this.updateMapZoom)
-    this.context.map.on('click', this.handleMarkerDeselect)
   }
 
   componentWillUnmount () {
     this.context.map.off('zoom', this.updateMapZoom)
-    this.context.map.off('click', this.handleMarkerDeselect)
   }
 
   render (props) {
