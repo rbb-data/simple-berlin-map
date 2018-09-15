@@ -3,12 +3,13 @@ const webpack = require('webpack')
 
 const htmlTemplate = require('html-webpack-template')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const devMode = process.env.NODE_ENV !== 'production'
 
-const extractStyles = new ExtractTextPlugin({
-  filename: '[name].css',
-  disable: process.env.NODE_ENV === 'development'
+const extractStyles = new MiniCssExtractPlugin({
+  filename: devMode ? '[name].css' : '[name].[hash].css',
+  chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
 })
 const copyData = new CopyWebpackPlugin([
   { from: './data/markers.geo.json', to: './data' }
@@ -62,35 +63,34 @@ module.exports = {
       },
       {
         test: /\.(sass)/,
-        use: ['css-hot-loader'].concat(extractStyles.extract({
-          use: [
-            { loader: 'css-loader',
-              options: {
-                sourceMap: true,
-                modules: true,
-                importLoaders: 2,
-                localIdentName: '[path]-[local]'
-              }
-            },
-            { loader: 'resolve-url-loader', options: { sourceMap: true } },
-            { loader: 'postcss-loader',
-              options: {
-                sourceMap: true,
-                plugins: [require('autoprefixer')()]
-              }
-            },
-            { loader: 'sass-loader', options: { sourceMap: true } }
-          ],
-          // use style-loader in development
-          fallback: 'style-loader'
-        }))
+        use: [
+          'css-hot-loader',
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          { loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              modules: true,
+              importLoaders: 3,
+              localIdentName: '[path]-[local]'
+            }
+          },
+          { loader: 'resolve-url-loader', options: { sourceMap: true } },
+          { loader: 'postcss-loader',
+            options: {
+              sourceMap: true,
+              plugins: [require('autoprefixer')()]
+            }
+          },
+          { loader: 'sass-loader', options: { sourceMap: true } }
+        ]
       },
       {
         test: /\.css/,
-        use: extractStyles.extract({
-          use: [{ loader: 'css-loader' }],
-          fallback: 'style-loader'
-        })
+        use: [
+          'css-hot-loader',
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader'
+        ]
       },
       {
         test: /\.(png|svg|gif|jpe?g|woff)$/,
