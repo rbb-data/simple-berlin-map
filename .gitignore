@@ -3,5 +3,6 @@
 /npm-debug.log
 .nyc_output
 .DS_Store
+stats.json
 /dst
 /.idea

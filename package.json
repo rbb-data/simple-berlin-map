@@ -4,7 +4,8 @@
   "description": "Base for rbb map visualisations",
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
-    "build": "webpack --progress --mode=production",
+    "build": "webpack --progress -p --mode=production",
+    "analyze": "webpack -p --mode=production --profile --json > stats.json && webpack-bundle-analyzer stats.json dst",
     "wundf-deploy": "npm run build && rsync --archive --verbose --exclude-from '.deployignore' dst/ wundf@wunderundfitzig.de:nox"
   },
   "contributors": [
