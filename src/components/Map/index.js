@@ -145,7 +145,7 @@ export default class Map extends Component {
       <Search class={_.addressSearch} {...searchProps} />
 
       <LeafletMap className={_.map} {...mapProps} ref={(map) => { this.map = map.leafletElement }}>
-        <BingLayer type='CanvasGray' bingkey={BING_KEY} culture='de-de' style='trs|lv:false_pt|lv:false_rd|fc:dddddd_hg|fc:bbbbbb' />
+        <BingLayer type='CanvasGray' bingkey={BING_KEY} culture='de-de' style='trs|lv:false;fc:EAEAEA_pp|lv:false;v:false_ar|v:false;lv:false_vg|v:true;fc:E4E4E4_wt|fc:AED1E4_rd|sc:d0d0d0;fc:e9e9e9_mr|sc:d3d3d3;fc:dddddd_hg|sc:d3d3d3;fc:e9e9e9_g|lc:EAEAEA' />
         <GeoJSON data={berlinMask} {...maskProps} />
         <ZoomControl position='bottomright' />
 
