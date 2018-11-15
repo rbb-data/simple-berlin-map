@@ -27,6 +27,11 @@ export default class Map extends Component {
     }
   }
 
+  handleZoom = (e) => {
+    const map = e.target
+    map.dragging.enable()
+  }
+
   checkSize = () => {
     const width = this.map._container.clientWidth
     const height = this.map._container.clientHeight
@@ -95,6 +100,8 @@ export default class Map extends Component {
       maxZoom: 16,
       zoomControl: false,
       scrollWheelZoom: false,
+      dragging: false,
+      onZoom: this.handleZoom,
       zoomSnap: false,
       bounds: [
         [berlin.bounds.bottomright.lat, berlin.bounds.bottomright.lng],
