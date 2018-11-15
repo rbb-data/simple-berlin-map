@@ -2,6 +2,11 @@
   "name": "rbb-map",
   "version": "1.0.0",
   "description": "Base for rbb map visualisations",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/rbb-data/simple-berlin-map.git"
+  },
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
     "build": "webpack --progress -p --mode=production",
@@ -50,6 +55,7 @@
     "hover": "^3.0.0-alpha.6",
     "leaflet": "^1.2.0",
     "lodash": "^4.17.4",
+    "npm": "^6.4.1",
     "preact": "^8.3.1",
     "preact-compat": "^3.18.4",
     "react-leaflet": "^1.5.0",
