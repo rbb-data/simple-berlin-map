@@ -31,7 +31,7 @@
     "cssnano": "^3.10.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-preact": "^1.1.6",
-    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.1.0",
@@ -45,10 +45,10 @@
     "resolve-url-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
-    "webpack": "^4.19.0",
+    "webpack": "^4.29.0",
     "webpack-bundle-analyzer": "^3.0.2",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.8"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
