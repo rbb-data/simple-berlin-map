@@ -1,11 +1,11 @@
 const path = require('path')
 const webpack = require('webpack')
-
 const htmlTemplate = require('html-webpack-template')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const devMode = process.env.NODE_ENV !== 'production'
+const Dotenv = require('dotenv-webpack')
 
 const extractStyles = new MiniCssExtractPlugin({
   filename: devMode ? '[name].css' : '[name].[hash].css',
@@ -104,7 +104,8 @@ module.exports = {
     createIframeHTML,
     extractStyles,
     copyData,
-    hmr
+    hmr,
+    new Dotenv()
   ],
 
   resolve: {
