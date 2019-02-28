@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "dotenv-webpack": "^1.7.0",
     "hover": "^3.0.0-alpha.6",
     "leaflet": "^1.2.0",
     "lodash": "^4.17.4",
