@@ -14,7 +14,7 @@ import colors from '@shared/styles/colors.sass'
 import _ from './styles.sass'
 
 // constants
-const BING_KEY = 'AsDTwD6TitCJVtFu4xIeYWq1UQKJq2KMUrj7GpQzRpgt7JDtgMWiI8Ovzw_qkz7F'
+const BING_KEY = process.env.BING_KEY_DEV
 
 export default class Map extends Component {
   handleSearch = (result) => {

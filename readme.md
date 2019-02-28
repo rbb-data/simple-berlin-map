@@ -4,6 +4,8 @@
 
 ## Setup
 
+Include environment variables in your `.env` file.
+
 This repository contains submodules; to fetch them run
 
 ``` bash
