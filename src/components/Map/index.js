@@ -14,7 +14,7 @@ import colors from '@shared/styles/colors.sass'
 import _ from './styles.sass'
 
 // constants
-const BING_KEY = process.env.BING_KEY_DEV
+const BING_KEY = (process.env.NODE_ENV !== 'production') ? process.env.BING_KEY_DEV : process.env.BING_KEY_PROD
 
 export default class Map extends Component {
   handleSearch = (result) => {
